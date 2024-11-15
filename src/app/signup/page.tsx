@@ -1,11 +1,11 @@
 import Navbar from '../components/Navbar';
-import Login from '../components/Login';
+import Signup from '../components/Signup';
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <body>
         <Navbar/>
-        <Login />
+        <Signup />
     </body>
   );
 }
