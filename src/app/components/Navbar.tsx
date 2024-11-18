@@ -1,10 +1,20 @@
-// Navbar.jsx
+// Navbar.tsx
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-const THEMES = {
+type ThemeKey = 'light' | 'dark' | 'forest' | 'ocean';
+
+type ThemeStyles = {
+  nav: string;
+  text: string;
+  shadow: string;
+  dropdown: string;
+  hover: string;
+};
+
+const THEMES: Record<ThemeKey, ThemeStyles> = {
   light: {
     nav: 'bg-white',
     text: 'text-gray-800',
@@ -38,15 +48,15 @@ const THEMES = {
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showThemes, setShowThemes] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState('dark');
+  const [currentTheme, setCurrentTheme] = useState<ThemeKey>('dark');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') as ThemeKey || 'dark';
     setCurrentTheme(savedTheme);
     document.documentElement.classList.add(savedTheme);
   }, []);
 
-  const changeTheme = (theme) => {
+  const changeTheme = (theme: ThemeKey) => {
     // Remove all theme classes
     Object.keys(THEMES).forEach(themeName => {
       document.documentElement.classList.remove(themeName);
@@ -85,7 +95,7 @@ export default function Navbar() {
           {showThemes && (
             <div className={`absolute right-0 w-48 mt-2 origin-top-right ${THEMES[currentTheme].dropdown} rounded-md shadow-lg`}>
               <div className="py-2">
-                {Object.keys(THEMES).map((theme) => (
+                {(Object.keys(THEMES) as ThemeKey[]).map((theme) => (
                   <button
                     key={theme}
                     onClick={() => changeTheme(theme)}

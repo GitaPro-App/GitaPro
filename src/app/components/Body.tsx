@@ -1,6 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+
+interface ThemeChangeEvent extends Event {
+  detail?: {
+    theme: string;
+  };
+}
 
 const THEME_STYLES = {
   light: {
@@ -37,123 +43,122 @@ const THEME_STYLES = {
   }
 };
 
-
 export default function Body() {
-    const missionRefs = useRef([]);
-    const [currentTheme, setCurrentTheme] = React.useState('dark');
-    const [animationsInitialized, setAnimationsInitialized] = React.useState(false);
-  
-    useEffect(() => {
-      // Initial theme
-      const savedTheme = localStorage.getItem('theme') || 'dark';
-      setCurrentTheme(savedTheme);
-  
-      // Handle theme changes
-      const handleThemeChange = (e) => {
-        if (e.detail?.theme) {
-          setCurrentTheme(e.detail.theme);
-        }
-      };
-  
-      window.addEventListener('themeChange', handleThemeChange);
-      return () => window.removeEventListener('themeChange', handleThemeChange);
-    }, []);
-  
-    useEffect(() => {
-      // Only run animation once when component mounts
-      if (!animationsInitialized) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry, idx) => {
-              if (entry.isIntersecting) {
-                setTimeout(() => {
-                  entry.target.classList.add('opacity-100');
-                  entry.target.classList.remove('translate-x-full', '-translate-x-full');
-                  if (idx === entries.length - 1) {
-                    setAnimationsInitialized(true);
-                  }
-                }, idx * 200);
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-  
-        missionRefs.current.forEach((ref) => {
-          if (ref) observer.observe(ref);
-        });
-  
-        return () => observer.disconnect();
+  const missionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [currentTheme, setCurrentTheme] = useState('dark');
+  const [animationsInitialized, setAnimationsInitialized] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setCurrentTheme(savedTheme);
+
+    const handleThemeChange = (e: ThemeChangeEvent) => {
+      if (e.detail?.theme) {
+        setCurrentTheme(e.detail.theme);
       }
-    }, [animationsInitialized]);
-  
-    const missions = [
-      {
-        title: "Ancient Wisdom, Modern Life",
-        description: "Making timeless Gita teachings accessible and applicable to contemporary challenges",
-        category: "Education"
-      },
-      {
-        title: "Personal Growth",
-        description: "Empowering individuals to discover inner peace and purpose through spiritual knowledge",
-        category: "Development"
-      },
-      {
-        title: "Community Connection",
-        description: "Building a global community of seekers dedicated to self-discovery and mutual growth",
-        category: "Community"
-      },
-      {
-        title: "Daily Practice",
-        description: "Transforming philosophical concepts into practical daily actions and mindful living",
-        category: "Practice"
-      }
-    ];
-  
-    const styles = THEME_STYLES[currentTheme] || THEME_STYLES.dark;
-  
-    return (
-      <div className={`min-h-screen ${styles.background} transition-colors duration-300`}>
-        <section className="container px-6 py-32 mx-auto text-center">
-          <h1 className={`text-3xl font-semibold mb-6 ${styles.text}`}>
-            Gita Verse of the Day
-          </h1>
-          <p className={`text-xl mb-4 ${styles.verse}`}>
-            कर्मण्येवाधिकारस्ते मा फलेषु कदाचन
-          </p>
-          <p className={`italic ${styles.translation}`}>
-            "Focus on your actions, not on the fruits of your actions."
-          </p>
-        </section>
-  
-        <div className="container px-6 py-16 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {missions.map((mission, index) => (
-              <div
-                key={index}
-                ref={(el) => (missionRefs.current[index] = el)}
-                className={`
-                  ${styles.card}
-                  backdrop-blur-sm p-8 rounded-lg
-                  transform transition-all duration-300
-                  ${!animationsInitialized ? 'opacity-0' : 'opacity-100'}
-                  ${!animationsInitialized && index % 2 === 0 ? 'translate-x-full' : ''}
-                  ${!animationsInitialized && index % 2 !== 0 ? '-translate-x-full' : ''}
-                `}
-              >
-                <span className={`text-sm font-semibold ${styles.text}`}>
-                  {mission.category}
-                </span>
-                <h2 className={`text-2xl font-bold mt-2 mb-4 ${styles.text}`}>
-                  {mission.title}
-                </h2>
-                <p className={styles.cardText}>
-                  {mission.description}
-                </p>
-              </div>
-            ))}
-          </div>
+    };
+
+    window.addEventListener('themeChange', handleThemeChange as EventListener);
+    return () => window.removeEventListener('themeChange', handleThemeChange as EventListener);
+  }, []);
+
+  useEffect(() => {
+    if (!animationsInitialized) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, idx) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                const element = entry.target as HTMLElement;
+                element.classList.add('opacity-100');
+                element.classList.remove('translate-x-full', '-translate-x-full');
+                if (idx === entries.length - 1) {
+                  setAnimationsInitialized(true);
+                }
+              }, idx * 200);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      missionRefs.current.forEach((ref) => {
+        if (ref) observer.observe(ref);
+      });
+
+      return () => observer.disconnect();
+    }
+  }, [animationsInitialized]);
+
+  const missions = [
+    {
+      title: "Ancient Wisdom, Modern Life",
+      description: "Making timeless Gita teachings accessible and applicable to contemporary challenges",
+      category: "Education"
+    },
+    {
+      title: "Personal Growth",
+      description: "Empowering individuals to discover inner peace and purpose through spiritual knowledge",
+      category: "Development"
+    },
+    {
+      title: "Community Connection",
+      description: "Building a global community of seekers dedicated to self-discovery and mutual growth",
+      category: "Community"
+    },
+    {
+      title: "Daily Practice",
+      description: "Transforming philosophical concepts into practical daily actions and mindful living",
+      category: "Practice"
+    }
+  ];
+
+  const styles = THEME_STYLES[currentTheme as keyof typeof THEME_STYLES] || THEME_STYLES.dark;
+
+  return (
+    <div className={`min-h-screen ${styles.background} transition-colors duration-300`}>
+      <section className="container px-6 py-32 mx-auto text-center">
+        <h1 className={`text-3xl font-semibold mb-6 ${styles.text}`}>
+          Gita Verse of the Day
+        </h1>
+        <p className={`text-xl mb-4 ${styles.verse}`}>
+          कर्मण्येवाधिकारस्ते मा फलेषु कदाचन
+        </p>
+        <p className={`italic ${styles.translation}`}>
+          "Focus on your actions, not on the fruits of your actions."
+        </p>
+      </section>
+
+      <div className="container px-6 py-16 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {missions.map((mission, index) => (
+            <div
+              key={index}
+              ref={(el: HTMLDivElement | null) => {
+                if (el) missionRefs.current[index] = el;
+              }}
+              className={`
+                ${styles.card}
+                backdrop-blur-sm p-8 rounded-lg
+                transform transition-all duration-300
+                ${!animationsInitialized ? 'opacity-0' : 'opacity-100'}
+                ${!animationsInitialized && index % 2 === 0 ? 'translate-x-full' : ''}
+                ${!animationsInitialized && index % 2 !== 0 ? '-translate-x-full' : ''}
+              `}
+            >
+              <span className={`text-sm font-semibold ${styles.text}`}>
+                {mission.category}
+              </span>
+              <h2 className={`text-2xl font-bold mt-2 mb-4 ${styles.text}`}>
+                {mission.title}
+              </h2>
+              <p className={styles.cardText}>
+                {mission.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
