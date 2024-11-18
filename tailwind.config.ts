@@ -14,5 +14,15 @@ export default {
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [], 
+  safelist: [
+    // Add theme classes that should never be purged
+    'forest',
+    'ocean',
+    // Add other dynamic classes used in themes
+  ]
+
+} satisfies Config; 
+
+
+
