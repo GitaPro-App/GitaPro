@@ -17,7 +17,7 @@ const THEMES = {
     text: 'text-gray-200',
     shadow: 'shadow-dark',
     dropdown: 'bg-gray-700',
-    hover: 'hover:bg-gray-600'
+    hover: 'hover:bg-gray-700'
   },
   forest: {
     nav: 'bg-emerald-800',
