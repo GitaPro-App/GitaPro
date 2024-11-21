@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "GitaNow",
@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <UserProvider>
+        <body>{children}</body>
+      </UserProvider>
     </html>
   );
 }
