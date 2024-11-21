@@ -80,7 +80,7 @@ export default function Navbar() {
             href="/" 
             className={`${THEMES[currentTheme].text} transition-colors duration-300 transform border-b-2 border-blue-500 mx-1.5 sm:mx-6 text-xl`}
           >
-            GitaNow
+            GitaPro
           </Link>
         </div>
 
