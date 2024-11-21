@@ -159,9 +159,6 @@ export default function Body() {
           ))}
         </div>
       </div>
-      <a href="/api/auth/logout">Logout</a>
-      <a href="/api/auth/login">Login</a>
-      <img src="./gitapro.png"></img>
     </div>
   );
 }
