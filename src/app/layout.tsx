@@ -3,7 +3,7 @@ import { UserProvider } from '@auth0/nextjs-auth0/client';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GitaNow",
+  title: "GitaPro",
   description: "Learn the Gita in a fun way",
 };
 

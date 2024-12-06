@@ -1,150 +1,74 @@
-// Navbar.tsx
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-
-type ThemeKey = 'light' | 'dark' | 'forest' | 'ocean';
-
-type ThemeStyles = {
-  nav: string;
-  text: string;
-  shadow: string;
-  dropdown: string;
-  hover: string;
-};
-
-const THEMES: Record<ThemeKey, ThemeStyles> = {
-  light: {
-    nav: 'bg-white',
-    text: 'text-gray-800',
-    shadow: 'shadow',
-    dropdown: 'bg-white',
-    hover: 'hover:bg-gray-200'
-  },
-  dark: {
-    nav: 'bg-gray-600',
-    text: 'text-gray-200',
-    shadow: 'shadow-dark',
-    dropdown: 'bg-gray-700',
-    hover: 'hover:bg-gray-700'
-  },
-  forest: {
-    nav: 'bg-emerald-800',
-    text: 'text-emerald-100',
-    shadow: 'shadow-emerald',
-    dropdown: 'bg-emerald-800',
-    hover: 'hover:bg-emerald-700'
-  },
-  ocean: {
-    nav: 'bg-blue-800',
-    text: 'text-blue-100',
-    shadow: 'shadow-blue',
-    dropdown: 'bg-blue-800',
-    hover: 'hover:bg-blue-700'
-  }
-};
+import React, { useState } from 'react';
+import './style.css'
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
-  const [showThemes, setShowThemes] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState<ThemeKey>('dark');
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as ThemeKey || 'dark';
-    setCurrentTheme(savedTheme);
-    document.documentElement.classList.add(savedTheme);
-  }, []);
-
-  const changeTheme = (theme: ThemeKey) => {
-    // Remove all theme classes
-    Object.keys(THEMES).forEach(themeName => {
-      document.documentElement.classList.remove(themeName);
-    });
-    // Add new theme class
-    document.documentElement.classList.add(theme);
-    setCurrentTheme(theme);
-    localStorage.setItem('theme', theme);
-    // Dispatch theme change event
-    window.dispatchEvent(new CustomEvent('themeChange', { 
-      detail: { theme: theme }
-    }));
-    setShowThemes(false);
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className={`${THEMES[currentTheme].nav} ${THEMES[currentTheme].shadow} transition-colors duration-300`}>
-      <div className="container flex items-center justify-between p-6 mx-auto">
-        <div className="flex-grow text-center">
-          <Link 
-            href="/" 
-            className={`${THEMES[currentTheme].text} transition-colors duration-300 transform border-b-2 border-blue-500 mx-1.5 sm:mx-6 text-xl`}
-          >
-            GitaPro
-          </Link>
-        </div>
+    <>
+      <nav className="bg-purple-600 fixed w-full top-0 z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Menu Button Container */}
+            <div className="relative">
+              <button 
+                className="relative w-8 h-8 flex items-center justify-center"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Menu"
+              >
+                <div className="w-6 h-6 relative">
+                  <span className={`absolute h-0.5 w-6 bg-white transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? 'rotate-45 top-3' : 'rotate-0 top-1'
+                  }`}></span>
+                  <span className={`absolute h-0.5 w-6 bg-white top-3 transition-all duration-200 ${
+                    isMenuOpen ? 'opacity-0' : 'opacity-100'
+                  }`}></span>
+                  <span className={`absolute h-0.5 w-6 bg-white transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? '-rotate-45 top-3' : 'rotate-0 top-5'
+                  }`}></span>
+                </div>
+              </button>
 
-        <div className="relative mr-4">
-          <button
-            className={`${THEMES[currentTheme].text} focus:outline-none flex items-center`}
-            onClick={() => setShowThemes(!showThemes)}
-          >
-            <span className="mr-2">Theme</span>
-          </button>
-
-          {showThemes && (
-            <div className={`absolute right-0 w-48 mt-2 origin-top-right ${THEMES[currentTheme].dropdown} rounded-md shadow-lg`}>
-              <div className="py-2">
-                {(Object.keys(THEMES) as ThemeKey[]).map((theme) => (
-                  <button
-                    key={theme}
-                    onClick={() => changeTheme(theme)}
-                    className={`w-full text-left px-4 py-2 text-sm ${THEMES[currentTheme].text} ${THEMES[currentTheme].hover} 
-                      ${currentTheme === theme ? 'bg-blue-500 text-white' : ''}`}
-                  >
-                    {theme.charAt(0).toUpperCase() + theme.slice(1)}
-                  </button>
-                ))}
-              </div>
+              {/* Dropdown Menu - Positioned relative to button */}
+              {isMenuOpen && (
+                <div className="absolute top-16 left-0 w-64 bg-purple-900/95 backdrop-blur-sm rounded-lg shadow-xl transform transition-all duration-300 ease-in-out z-40">
+                  <div className="py-4">
+                    <div className="space-y-6 px-4">
+                      <div className="space-y-3">
+                        <h3 className="text-white font-semibold text-lg border-b border-purple-800 pb-2">Learn</h3>
+                        <ul className="space-y-2">
+                          <li><a href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</a></li>
+                          <li><a href="/learn" className="text-gray-300 hover:text-white transition-colors block py-1">Learn</a></li>
+                          <li><a href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</a></li>
+                          <li><a href="#" className="text-gray-300 hover:text-white transition-colors block py-1">About Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-        </div>
 
-        <div className="relative">
-          <button
-            className={`${THEMES[currentTheme].text} focus:outline-none`}
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            Menu
-          </button>
-
-          {showMenu && (
-            <div className={`absolute right-0 w-40 mt-2 origin-top-right ${THEMES[currentTheme].dropdown} rounded-md shadow-lg`}>
-              <div className="py-2">
-                <Link 
-                  href="/api/auth/login" 
-                  className={`block px-4 py-2 text-sm ${THEMES[currentTheme].text} ${THEMES[currentTheme].hover}`}
-                >
-                  Login
-                </Link>
-              
-                <Link 
-                  href="/api/auth/logout" 
-                  className={`block px-4 py-2 text-sm ${THEMES[currentTheme].text} ${THEMES[currentTheme].hover}`}
-                >
-                  Logout
-                </Link>
-                <Link 
-                  href="/learn" 
-                  className={`block px-4 py-2 text-sm ${THEMES[currentTheme].text} ${THEMES[currentTheme].hover}`}
-                >
-                  Learn
-                </Link>
-              </div>
+            {/* Logo */}
+            <div className="absolute left-1/2 transform -translate-x-1/2">
+              <h1 className="text-2xl font-bold text-white">GitaPro</h1>
             </div>
-          )}
+
+            <div className="w-10"></div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      {/* Overlay */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/20 z-30"
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+      )}
+      
+    </>
   );
 }
