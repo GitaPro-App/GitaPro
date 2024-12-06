@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
-import "./globals.css";
+import "./global.css";
 
 export const metadata: Metadata = {
-  title: "GitaPro",
+  title: "GitaNow",
   description: "Learn the Gita in a fun way",
 };
 
