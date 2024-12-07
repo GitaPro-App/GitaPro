@@ -39,12 +39,10 @@ export default function Navbar() {
                   <div className="py-4">
                     <div className="space-y-6 px-4">
                       <div className="space-y-3">
-                        <h3 className="text-white font-semibold text-lg border-b border-purple-800 pb-2">Learn</h3>
                         <ul className="space-y-2">
-                          <li>< Link href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</ Link></li>
-                          <li>< Link href="/learn" className="text-gray-300 hover:text-white transition-colors block py-1">Learn</ Link></li>
-                          <li>< Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</ Link></li>
                           <li>< Link href="#" className="text-gray-300 hover:text-white transition-colors block py-1">About Us</ Link></li>
+                          <li>< Link href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</ Link></li>
+                          <li>< Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</ Link></li>
                         </ul>
                       </div>
                     </div>
