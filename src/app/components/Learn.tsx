@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 type StudyDepth = 'quick' | 'medium' | 'well';
 

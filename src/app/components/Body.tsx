@@ -3,18 +3,16 @@
 import React from 'react';
 import Image from 'next/image';
 import './style.css';
+import RotatingText from './RotatingText';
 
 export default function Body() {
   return (
-    <div className="bg-gradient min-h-screen">
+    
+    <div className="bg-gradient min-h-screen pt-10">
       <div className="text-gray-800">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              Learn the <br/>
-              <span className="text-purple-600">Bhagavad Gita</span>
-            </h1>
-            
+            <RotatingText/>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
               Experience ancient wisdom through modern learning. Start your spiritual journey today.
             </p>
