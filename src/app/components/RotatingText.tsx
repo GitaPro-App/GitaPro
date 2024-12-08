@@ -1,4 +1,5 @@
 "use client"
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
@@ -24,26 +25,23 @@ function RotatingText() {
       },
       { threshold: 0.5 }
     );
-
+  
     if (containerRef.current) {
       observer.observe(containerRef.current);
     }
-
+  
     if (isAnimating) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => {
-          if (prevIndex === words.length - 1) {
-            setIsAnimating(false);
-            setTimeout(() => {
-              setIsSpaced(false);
-            }, 500);
-            return 0;
+          if (prevIndex === words.length - 1) { // When "easiest" is reached
+            setIsAnimating(false); // Stop the animation
+            return prevIndex; // Keep the index at "easiest"
           }
           return prevIndex + 1;
         });
       }, 2000);
     }
-
+  
     return () => {
       clearInterval(interval);
       if (containerRef.current) {
@@ -53,15 +51,27 @@ function RotatingText() {
   }, [isAnimating]);
 
   return (
-    <div ref={containerRef} className="min-h-[120px] md:min-h-[100px] overflow-hidden relative px-4 md:px-6">
+    <div ref={containerRef} className="min-h-[60px] md:min-h-[60px] overflow-hidden relative px-4 md:px-6">
       <motion.div 
-        className="text-xl sm:text-2xl md:text-4xl font-bold flex flex-wrap items-center justify-center text-center gap-2"
+        className="text-3xl sm:text-3xl md:text-4xl font-bold flex flex-wrap items-center justify-center text-center"
         animate={{
-          gap: isSpaced ? "0.5rem" : "0.25rem",
+          gap: isSpaced ? "0.75rem" : "0.75rem",
         }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1.5 }}
       >
-        <motion.span className="whitespace-nowrap">Learn the Gita</motion.span>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={`start-${currentIndex}`}
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 20, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="whitespace-nowrap"
+          >
+            Learn the Gita
+          </motion.span>
+        </AnimatePresence>
+        
         <AnimatePresence mode="wait">
           <motion.span
             key={currentIndex}
@@ -72,14 +82,26 @@ function RotatingText() {
               type: "spring",
               stiffness: 300,
               damping: 30,
-              duration: 0.7 
+              duration: 3
             }}
             className="text-purple-600 whitespace-nowrap"
           >
             {words[currentIndex]}
           </motion.span>
         </AnimatePresence>
-        <motion.span className="whitespace-nowrap">way possible.</motion.span>
+        
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={`end-${currentIndex}`}
+            initial={{ x: 20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -20, opacity: 0 }}
+            transition={{ duration: .5 }}
+            className="whitespace-nowrap"
+          >
+            way possible.
+          </motion.span>
+        </AnimatePresence>
       </motion.div>
     </div>
   );
