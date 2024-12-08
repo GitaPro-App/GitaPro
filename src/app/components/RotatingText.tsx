@@ -37,7 +37,7 @@ function RotatingText() {
             setTimeout(() => {
               setIsSpaced(false);
             }, 500);
-            return 0; // Return to "work"
+            return 0;
           }
           return prevIndex + 1;
         });
@@ -53,15 +53,15 @@ function RotatingText() {
   }, [isAnimating]);
 
   return (
-    <div ref={containerRef} className="h-[100px] overflow-hidden relative">
-      <motion.h1 
-        className="text-4xl font-bold inline-flex items-center"
+    <div ref={containerRef} className="min-h-[120px] md:min-h-[100px] overflow-hidden relative px-4 md:px-6">
+      <motion.div 
+        className="text-xl sm:text-2xl md:text-4xl font-bold flex flex-wrap items-center justify-center text-center gap-2"
         animate={{
-          gap: isSpaced ? "2rem" : "0.5rem",
+          gap: isSpaced ? "0.5rem" : "0.25rem",
         }}
         transition={{ duration: 0.5 }}
       >
-        <motion.span>Learn the Gita</motion.span>
+        <motion.span className="whitespace-nowrap">Learn the Gita</motion.span>
         <AnimatePresence mode="wait">
           <motion.span
             key={currentIndex}
@@ -74,13 +74,13 @@ function RotatingText() {
               damping: 30,
               duration: 0.7 
             }}
-            className="text-purple-600"
+            className="text-purple-600 whitespace-nowrap"
           >
             {words[currentIndex]}
           </motion.span>
         </AnimatePresence>
-        <motion.span>way possible.</motion.span>
-      </motion.h1>
+        <motion.span className="whitespace-nowrap">way possible.</motion.span>
+      </motion.div>
     </div>
   );
 }
