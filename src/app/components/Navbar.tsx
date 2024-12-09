@@ -41,8 +41,10 @@ export default function Navbar() {
                       <div className="space-y-3">
                         <ul className="space-y-2">
                           <li>< Link href="#" className="text-gray-300 hover:text-white transition-colors block py-1">About Us</ Link></li>
-                          <li>< Link href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</ Link></li>
-                          <li>< Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</ Link></li>
+                            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                          <li>< a href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</ a></li>
+                            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                          <li>< a href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</ a></li>
                         </ul>
                       </div>
                     </div>

@@ -9,3 +9,6 @@ export async function GET(
   const auth0Handler = handleAuth();
   return auth0Handler(request, { params: { auth0 } });
 }
+
+
+
