@@ -5,8 +5,6 @@ const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-600 to-purple-400 text-white">
       <div className="container mx-auto px-4 py-16">
-        
-
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
          

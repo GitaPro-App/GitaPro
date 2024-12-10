@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
 function RotatingText() {
-  const words = ["fastest", "simplest", "easiest"];
+  const words = ["fast.", "simple.", "easy."];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   const [isSpaced, setIsSpaced] = useState(true);
@@ -68,7 +68,7 @@ function RotatingText() {
             transition={{ duration: 0.5 }}
             className="whitespace-nowrap"
           >
-            Learn the Gita
+            Learning the Bhagavad Gita made
           </motion.span>
         </AnimatePresence>
         
@@ -87,19 +87,6 @@ function RotatingText() {
             className="text-purple-600 whitespace-nowrap"
           >
             {words[currentIndex]}
-          </motion.span>
-        </AnimatePresence>
-        
-        <AnimatePresence mode="wait">
-          <motion.span
-            key={`end-${currentIndex}`}
-            initial={{ x: 20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -20, opacity: 0 }}
-            transition={{ duration: .5 }}
-            className="whitespace-nowrap"
-          >
-            way possible.
           </motion.span>
         </AnimatePresence>
       </motion.div>

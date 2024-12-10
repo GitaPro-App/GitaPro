@@ -4,7 +4,7 @@ import "./global.css";
 
 export const metadata: Metadata = {
   title: "GitaPro",
-  description: "Learn the Gita in a fun way",
+  description: "Learn the Gita in a fun way"
 };
 
 export default function RootLayout({

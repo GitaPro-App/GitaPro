@@ -2,37 +2,19 @@
 
 import React from 'react';
 import Image from 'next/image';
-import './style.css';
-import RotatingText from './RotatingText';
-import { useUser } from '@auth0/nextjs-auth0/client';
+import '../style.css';
+import RotatingText from './HeadLine';
 
-export default function Body() {
-  const { user } = useUser();
-
+export default function LandingPage() {
+  
   return (
     <div className="bg-gradient min-h-screen pt-10">
-      <div className="bg-white container mx-auto mt-8 p-4">
-        <h1 className="text-2xl font-bold mb-4">Profile</h1>
-        {user && (
-          <div>
-            <Image
-              src={user.picture as string}
-              alt={`Profile picture of ${user.name}`}
-              width={96}
-              height={96}
-              className="rounded-full mb-4"
-            />
-            <h2 className="text-xl mb-2">{user.name}</h2>
-            <p className="mb-2">{user.email}</p>
-          </div>
-        )}
-      </div>
       <div className="text-gray-800">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
             <RotatingText />
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Experience ancient wisdom through modern learning. Start your spiritual journey today.
+              With just a couple of minutes a day, you can master the Bhagavad Gita. Start now for free!
             </p>
             
             <button className="bg-purple-600 text-white px-8 py-3 rounded-full font-medium 

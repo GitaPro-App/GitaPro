@@ -22,8 +22,8 @@
   
   .feature-image:hover img {
     transform: scale(1.05);
-  }
-  
+}
+
   @media (max-width: 768px) {
     .feature-row {
       flex-direction: column;
@@ -49,14 +49,14 @@
 
 .bg-gradient {
   background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
-}
+  }
 
 /* Responsive design improvements */
 @media (max-width: 768px) {
   .feature-row {
     flex-direction: column;
-  }
-  
+}
+
   .feature-content,
   .feature-image {
     width: 100%;
@@ -68,10 +68,12 @@
   }
 }
 
-.bg-gradient {
-    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
-  }
-  
-  .shadow-soft {
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.15);
-  }
+.dropdown-menu {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+  transform: translateY(0); /* Ensure only vertical movement */
+}
+
+button, a {
+  transition: all 0.2s ease;
+}
