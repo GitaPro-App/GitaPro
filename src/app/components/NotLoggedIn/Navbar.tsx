@@ -37,7 +37,7 @@ export default function Navbar() {
                 
                 <Link href="/about" className="text-white hover:text-gray-200 transition-colors">About Us</Link>
                 <Link href="/#" className="text-white hover:text-gray-200 transition-colors">Features</Link>
-                <a href="/api/auth/login" className="text-white hover:text-gray-200 transition-colors">Login</a>
+                <Link href="/api/auth/login" className="text-white hover:text-gray-200 transition-colors">Login</Link>
                 <Link href="/api/auth/signup" className="text-white hover:text-gray-200 transition-colors">Get Started</Link>
               </div>
             ) : (
@@ -69,7 +69,7 @@ export default function Navbar() {
                           <ul className="space-y-2">
                             <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors block py-1">About Us</Link></li>
                             <li><Link href="/#" className="text-gray-300 hover:text-white transition-colors block py-1">Features</Link></li>
-                            <li><a href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</a></li>
+                            <li><Link href="/api/auth/login" className="text-gray-300 hover:text-white transition-colors block py-1">Login</Link></li>
                             <Link href="/api/auth/signup" className="text-gray-300 hover:text-white transition-colors block py-1">Get Started</Link>
                           </ul>
                         </div>

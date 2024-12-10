@@ -33,7 +33,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-4">
                 <ul className="flex space-x-4">
                   <li>
-                    <a href="/#" className="text-gray-300 hover:text-white transition-colors">Settings</a>
+                    <Link href="/#" className="text-gray-300 hover:text-white transition-colors">Settings</Link>
                   </li>
                   <li>
                     <Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors">Logout</Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
                       <div className="space-y-6 px-4">
                         <ul className="space-y-2">
                           <li>
-                            <a href="/#" className="text-gray-300 hover:text-white transition-colors block py-1">Settings</a>
+                            <Link href="/#" className="text-gray-300 hover:text-white transition-colors block py-1">Settings</Link>
                           </li>
                           <li>
                             <Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</Link>
