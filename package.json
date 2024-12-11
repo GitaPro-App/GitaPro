@@ -18,7 +18,8 @@
   },
   "overrides": {
     "@auth0/auth0-react": {
-      "react": "^19.0.0"
+      "react": "^19.0.0", 
+      "react-dom": "^19.0.0"
     }
   },
   "devDependencies": {
