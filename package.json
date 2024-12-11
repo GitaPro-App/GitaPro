@@ -17,9 +17,8 @@
     "react-dom": "^19.0.0-rc-66855b96-20241106"
   },
   "overrides": {
-    "framer-motion": {
-      "react": "^18.3.1",
-      "react-dom": "^18.3.1"
+    "@auth0/auth0-react": {
+      "react": "^19.0.0"
     }
   },
   "devDependencies": {
