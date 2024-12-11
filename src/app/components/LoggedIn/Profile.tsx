@@ -1,7 +1,7 @@
 // UserDashboard.jsx
 'use client';
 
-import { useAuth0 } from '@auth0/auth0-react';
+import { useUser } from '@auth0/nextjs-auth0/client';
 
 const chapters = [
   { id: 1, title: "Arjuna's Dilemma", progress: 75 },
@@ -25,13 +25,14 @@ const chapters = [
 ];
 
 const UserDashboard = () => {
-  const { user } = useAuth0();
+  const { user } = useUser();
+
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="pt-24 px-6 max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-purple-600 mb-12">Welcome, {user?.name}</h1>
-        
+    <main className="min-h-screen bg-gray-50 ">
+      <div className="pt-24 px-6 max-w-7xl mx-auto ">
+        <h1 className="text-4xl font-bold text-purple-600 mb-12">Welcome, {user?.name}!</h1>
+        <h3 className="text-2xl font-bold text-purple-600 mb-12">Progress so far:</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {chapters.map((chapter) => (
             <div key={chapter.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

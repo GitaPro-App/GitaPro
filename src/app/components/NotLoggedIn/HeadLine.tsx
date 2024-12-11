@@ -66,9 +66,9 @@ function RotatingText() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 20, opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="whitespace-nowrap"
+            className=""
           >
-            Learning the Bhagavad Gita made
+            Learning the Gita made
           </motion.span>
         </AnimatePresence>
         
