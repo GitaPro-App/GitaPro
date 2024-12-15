@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://sanjeet-v-s-workspace-30uqe5.us-east-1.xata.sh/db/gita-app",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

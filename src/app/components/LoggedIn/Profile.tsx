@@ -1,31 +1,36 @@
-// UserDashboard.jsx
+// UserDashboard.tsx
 'use client';
+
+import { useState, useEffect } from 'react';
 
 import { useUser } from '@auth0/nextjs-auth0/client';
 
-const chapters = [
-  { id: 1, title: "Arjuna's Dilemma", progress: 75 },
-  { id: 2, title: "Sankhya Yoga", progress: 60 },
-  { id: 3, title: "Karma Yoga", progress: 45 },
-  { id: 4, title: "Jnana Yoga", progress: 30 },
-  { id: 5, title: "Karma Sanyasa Yoga", progress: 90 },
-  { id: 6, title: "Dhyana Yoga", progress: 20 },
-  { id: 7, title: "Gyaan Vigyana Yoga", progress: 0 },
-  { id: 8, title: "Aksara Brahma Yoga", progress: 15 },
-  { id: 9, title: "Raja Vidya Yoga", progress: 50 },
-  { id: 10, title: "Vibhuti Yoga", progress: 40 },
-  { id: 11, title: "Visvarupa Darsana Yoga", progress: 25 },
-  { id: 12, title: "Bhakti Yoga", progress: 70 },
-  { id: 13, title: "Ksetra Ksetrajna Yoga", progress: 85 },
-  { id: 14, title: "Gunatraya Vibhaga Yoga", progress: 10 },
-  { id: 15, title: "Purusottama Yoga", progress: 5 },
-  { id: 16, title: "Daivasura Sampad Vibhaga Yoga", progress: 95 },
-  { id: 17, title: "Sraddhatraya Vibhaga Yoga", progress: 55 },
-  { id: 18, title: "Moksha Sanyasa Yoga", progress: 65 },
-];
+
 
 const UserDashboard = () => {
   const { user } = useUser();
+  const [verseCountOne, setVerseCountOne] = useState<number>(0);
+  const [verseCountTwo, setVerseCountTwo] = useState<number>(0);
+
+  useEffect(() => {
+    fetch('/api/getRows/1')
+    .then(res => res.json())
+    .then(data => setVerseCountOne(data.columnCount));
+
+  fetch('/api/getRows/2')
+    .then(res => res.json())
+    .then(data => setVerseCountTwo(data.columnCount));
+
+  }, []);
+
+
+  
+const chapters = [
+  { id: 1, title: "Arjuna's Dilemma", numberVerses: verseCountOne,  userProgressPercentage: Math.round(500/verseCountOne)},
+  { id: 2, title: "Sankhya Yoga", numberVerses: verseCountTwo,  userProgressPercentage: Math.round(500/verseCountTwo) }
+];
+
+
 
 
   return (
@@ -54,11 +59,11 @@ const UserDashboard = () => {
                       stroke="#8b5cf6"
                       strokeWidth="8"
                       fill="none"
-                      strokeDasharray={`${chapter.progress * 1.76} 176`}
+                      strokeDasharray={`${chapter.userProgressPercentage * 1.76} 176`}
                     />
                   </svg>
                   <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-medium">
-                    {chapter.progress}%
+                    5/{chapter.numberVerses}
                   </span>
                 </div>
                 <div>

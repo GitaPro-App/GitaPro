@@ -1,0 +1,39 @@
+{
+  "id": "mig_cteh6ut7965n01fhrqa0",
+  "parentID": "mig_cteh06r2vtkja3ivchv0",
+  "checksum": "1:2ef43f52aaeab2cf477368e66c118e01187621a08a994809a39a3b62ccb56523",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Chapter2"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Verse",
+          "type": "float"
+        },
+        "table": "Chapter2"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Transliteration",
+          "type": "text"
+        },
+        "table": "Chapter2"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Translation",
+          "type": "text"
+        },
+        "table": "Chapter2"
+      }
+    }
+  ]
+}
