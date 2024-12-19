@@ -1,20 +1,28 @@
 import { getXataClient } from '../../../../utils/xataClient';
 import { NextRequest, NextResponse } from 'next/server';
 
-type TableNames = {
-  "Chapter-1": Record<string, unknown>;
-  "Chapter-2": Record<string, unknown>;
-};
+// Define interface matching your Xata database schema
+interface DatabaseRecord {
+  id: string;
+  verse: number;
+  transliteration: string;
+}
+
+interface XataDatabase {
+  'Chapter-1': DatabaseRecord;
+  'Chapter-2': DatabaseRecord;
+}
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ chapter: string }> }
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
+  { params }: any
 ): Promise<NextResponse> {
   try {
-    const { chapter } = await params;
     const xata = getXataClient();
-    const tableName = `Chapter-${chapter}` as keyof TableNames;
-    const page = await xata.db[tableName].getAll();
+    const tableName = `Chapter-${params.chapter}` as keyof XataDatabase;
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
+    const page = await (xata.db as any)[tableName].getAll();
     const columnCount = page.length;
     return NextResponse.json({ columnCount });
   } catch {

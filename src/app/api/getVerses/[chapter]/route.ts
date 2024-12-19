@@ -15,7 +15,8 @@ export async function GET(
   try {
     const xata = getXataClient();
     const tableName = `Chapter-${params.chapter}`;
-    const verses = await xata.db[tableName].getAll();
+    // Use bracket notation to access table with hyphen
+    const verses = await xata.db[tableName as keyof typeof xata.db].getAll();
     return NextResponse.json({ verses });
   } catch {
     return NextResponse.json(
