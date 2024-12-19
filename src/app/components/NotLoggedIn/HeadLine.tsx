@@ -12,6 +12,8 @@ function RotatingText() {
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
+    const currentContainerRef = containerRef.current;
+  
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -26,16 +28,16 @@ function RotatingText() {
       { threshold: 0.5 }
     );
   
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    if (currentContainerRef) {
+      observer.observe(currentContainerRef);
     }
   
     if (isAnimating) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => {
-          if (prevIndex === words.length - 1) { // When "easiest" is reached
-            setIsAnimating(false); // Stop the animation
-            return prevIndex; // Keep the index at "easiest"
+          if (prevIndex === words.length - 1) {
+            setIsAnimating(false);
+            return prevIndex;
           }
           return prevIndex + 1;
         });
@@ -44,11 +46,12 @@ function RotatingText() {
   
     return () => {
       clearInterval(interval);
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (currentContainerRef) {
+        observer.unobserve(currentContainerRef);
       }
     };
-  }, [isAnimating]);
+  }, [isAnimating, words.length]);
+  
 
   return (
     <div ref={containerRef} className="min-h-[60px] md:min-h-[60px] overflow-hidden relative px-4 md:px-6">

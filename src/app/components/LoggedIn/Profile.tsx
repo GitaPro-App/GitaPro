@@ -4,9 +4,6 @@
 import { useState, useEffect } from 'react';
 
 import { useUser } from '@auth0/nextjs-auth0/client';
-import Link from 'next/link';
-
-
 
 const UserDashboard = () => {
   const { user } = useUser();
@@ -41,7 +38,7 @@ const chapters = [
         <h3 className="text-2xl font-bold text-purple-600 mb-12">Progress so far:</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {chapters.map((chapter) => (
-            <a href = {`/chapter/${chapter.id}`}>
+            <a href = {`/chapter/${chapter.id}`} key={chapter.id}>
               <button>
                 <div key={chapter.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                   <div className="flex items-center space-x-4">
