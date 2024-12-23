@@ -25,18 +25,7 @@ export default function LandingPage() {
 
         <p className="text-gray-600 mt-4 mb-12">Begin your spiritual journey for free, no commitments</p>
 
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
-            <div className="bg-purple-100 px-6 py-3 rounded-full">
-              <span className="font-semibold">100K+</span> Active Practitioners
-            </div>
-            <div className="bg-purple-100 px-6 py-3 rounded-full">
-              <span className="font-semibold">4.9★</span> App Store Rating
-            </div>
-            <div className="bg-purple-100 px-6 py-3 rounded-full">
-              <span className="font-semibold">4</span> Translations
-            </div>
-          </div>
+          
 
           {/* Main Features */}
           <div className="space-y-20">
