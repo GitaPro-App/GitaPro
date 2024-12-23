@@ -14,7 +14,7 @@ export default function LandingPage() {
           <RotatingText />
         </div>
     
-        <div className="flex justify-center gap-4 mb-4 pt-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-4 pt-4"> 
           <button className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all">
             START YOUR JOURNEY
           </button>
@@ -22,8 +22,8 @@ export default function LandingPage() {
             EXPLORE FEATURES →
           </button>
         </div>
-          
-          <p className="text-gray-600 mb-12">Begin your spiritual journey for free, no commitments</p>
+
+        <p className="text-gray-600 mt-4 mb-12">Begin your spiritual journey for free, no commitments</p>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
@@ -64,7 +64,7 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left space-y-6">
                 <h3 className="text-sm font-bold text-green-700">PROGRESS TRACKING</h3>
-                <h2 className="text-4xl font-bold">Transform everday learning into wisdom</h2>
+                <h2 className="text-4xl font-bold">Transform everday learning into</h2>
                 <p className="text-gray-600">
                   Track your spiritual progress with interactive learning modules. Set goals, maintain streaks, and see your understanding deepen over time with our progress metrics.
                 </p>
