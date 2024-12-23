@@ -25,9 +25,13 @@ export default function Navbar() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0 px-1">
-              <h1 className="text-3xl font-bold text-white">GitaPro</h1>
-            </div>
+            <a href = '/'>
+              <button>
+                <div className="flex-shrink-0 px-1">
+                  <h1 className="text-3xl font-bold text-white">GitaPro</h1>
+                </div>  
+              </button>
+            </a>
 
             
 

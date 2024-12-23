@@ -1,21 +1,52 @@
 import React from 'react';
 
-
 const AboutUs: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-600 to-purple-400 text-white">
+    <div className="mx-auto max-w-4xl pt-8 min-h-screen bg-white text-gray-800">
       <div className="container mx-auto px-4 py-16">
-        {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-         
-          
-          <div className="space-y-6">
-            
+        {/* Hero Section */}
+        <div className="text-center mb-12 ">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto ">
+            We help folks love, learn, and understand the Bhagavad Gita—so they can be connected to the essence of the Gita.
+          </p>
+        </div>
+
+        {/* Mission Statement */}
+        <div className="mb-16 ">
+          <div className="flex items-center gap-8 ">
+            <div className="flex-1 ">
+              <h2 className="text-2xl font-bold mb-4">
+                We're here to get as many people
+                <span className="text-purple-600"> learning</span> as possible.
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Not just people that are already spiritual, but all people. We offer a more accessible and sustainable alternative to the traditional learning methods.
+              </p>
+              <p className="text-gray-600">
+                We don't think learning scripture should be intimidating at all. We give it a fun twist. Learning is medicine. When done right, it not only enlightens but protects against ignorance.
+              </p>
+            </div>
+            <div className="flex-1">
+              {/* Replace 'your-image-url' with actual image */}
+              <div className="grid grid-cols-1 gap-4">
+                <img 
+                  src="/bg3.png" 
+                  alt="Community Learning"
+                  className="rounded-lg w-full"
+                />
+                <img 
+                  src="/krishna.png" 
+                  alt="Learning Together"
+                  className="rounded-lg w-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Letter Section */}
-        <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-lg p-8 mb-16">
+        <div className="max-w-4xl mx-auto bg-[#f3e8ff]  rounded-lg p-8 mb-16">
           <h2 className="text-3xl font-semibold mb-6">A Letter from the GitaPro Team</h2>
           <div className="space-y-4 text-lg">
             <p>
@@ -60,9 +91,6 @@ const AboutUs: React.FC = () => {
             </p>
           </div>
         </div>
-
-        {/* Features Section */}
-        
       </div>
     </div>
   );

@@ -3,7 +3,8 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Chapter1Component from '../../components/LoggedIn/ChapterPages/Chapter1';
-import Navbar from '../../components/LoggedIn/Navbar';
+import Navbar from '../../components/LoggedIn/Navbar'; 
+
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 
@@ -34,7 +35,8 @@ export default function Chapter1() {
       <Navbar />
       <div className="container mx-auto px-4 pt-20">
         <Chapter1Component />
-      </div>
+      </div> 
+      <Footer/>
     </main>
   );
 

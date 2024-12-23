@@ -71,7 +71,7 @@ export default function LandingPage() {
              {/* Spiritual Collaboration */}
              <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left space-y-6">
-                <h3 className="text-sm font-bold text-purple-700">SPIRITUAL COLLABORATION</h3>
+                <h3 className="text-sm font-bold text-purple-700">LEARNING COLLABORATION</h3>
                 <h2 className="text-4xl font-bold">Connect with a classroom local to you</h2>
                 <p className="text-gray-600">
                   Join study groups, participate in guided discussions, and share insights with fellow students. Experience the power of collective wisdom in your spiritual journey.
@@ -83,10 +83,13 @@ export default function LandingPage() {
               </div>
               <div className="bg-purple-100 rounded-2xl p-6 shadow-xl">
                 <Image src="/bg3.png" alt="Community Features" width={600} height={400} className="rounded-xl" />
-              </div>
+              </div> 
+
+              <div className="space-y-32"></div>
             </div>
           </div>
-        </div>
+        </div> 
+        
     </div>
   );
 }
