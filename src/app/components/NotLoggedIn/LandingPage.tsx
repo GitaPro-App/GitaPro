@@ -22,7 +22,7 @@ export default function LandingPage() {
               Get Started
             </button>
             
-            <div className="mt-24 w-full space-y-16">
+            <div className="mt-24 w-full space-y-16 max-w-6xl mx-auto">
               {[
                 {
                   title: "Ancient Wisdom",
@@ -60,15 +60,16 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
-                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-soft hover:shadow-xl transition-shadow duration-300">
-                      <Image
-                        src={feature.image}
-                        alt={feature.title}
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        className="rounded-xl"
-                        loading="lazy"
-                      />
+                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-soft hover:shadow-xl transition-shadow duration-300 max-w-md mx-auto">
+                    <Image
+                      src={feature.image}
+                      alt={feature.title}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      style={{ objectFit: 'cover' }}
+                      className="rounded-xl"
+                      loading="lazy"
+                    />
                     </div>
                   </div>
                 </div>
