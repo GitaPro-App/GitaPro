@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
-import "./globals.css";
+import "./global.css";
 
 export const metadata: Metadata = {
-  title: "GitaNow",
-  description: "Learn the Gita in a fun way",
+  title: "GitaPro",
+  description: "Learn the Gita in a fun way"
 };
 
 export default function RootLayout({

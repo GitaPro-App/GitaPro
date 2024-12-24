@@ -1,0 +1,38 @@
+{
+  "id": "mig_cteh06r2vtkja3ivchv0",
+  "checksum": "1:6f8494f8a871162fe693dd861a580ced2f35167b36e132826783b5050106aef6",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Chapter-1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Verse",
+          "type": "int"
+        },
+        "table": "Chapter-1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Transliteration",
+          "type": "text"
+        },
+        "table": "Chapter-1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Translation",
+          "type": "text"
+        },
+        "table": "Chapter-1"
+      }
+    }
+  ]
+}
