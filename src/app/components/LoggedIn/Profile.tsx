@@ -3,22 +3,16 @@
 import { useState, useEffect } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
+
+
+
 const UserDashboard = () => {
   const { user } = useUser();
-  const [verseCountOne, setVerseCountOne] = useState<number>(0);
-  const [verseCountTwo, setVerseCountTwo] = useState<number>(0);
   const [totalProgress, setTotalProgress] = useState<number>(0);
   const [verseOfTheDay, setVerseOfTheDay] = useState<string>('');
 
+
   useEffect(() => {
-    fetch('/api/getRows/1')
-      .then(res => res.json())
-      .then(data => setVerseCountOne(data.columnCount));
-
-    fetch('/api/getRows/2')
-      .then(res => res.json())
-      .then(data => setVerseCountTwo(data.columnCount));
-
     // Simulating total progress (replace with actual data)
     setTotalProgress(Math.floor(Math.random() * 701));
 
@@ -27,8 +21,8 @@ const UserDashboard = () => {
   }, []);
 
   const chapters = [
-    { id: 1, title: "Arjuna's Dilemma", numberVerses: verseCountOne, userProgress: 5 },
-    { id: 2, title: "Sankhya Yoga", numberVerses: verseCountTwo, userProgress: 5 },
+    { id: 1, title: "Arjuna's Dilemma", numberVerses: 46, userProgress: 5 },
+    { id: 2, title: "Sankhya Yoga", numberVerses: 72, userProgress: 5 },
     { id: 3, title: "Karma Yoga", numberVerses: 43, userProgress: 0 },
     { id: 4, title: "Jnana Yoga", numberVerses: 42, userProgress: 0 },
     { id: 5, title: "Karma Sanyasa Yoga", numberVerses: 29, userProgress: 0 },

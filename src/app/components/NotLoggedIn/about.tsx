@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from  'next/image'
 
 const AboutUs: React.FC = () => {
   return (
@@ -30,12 +31,12 @@ const AboutUs: React.FC = () => {
             <div className="flex-1">
               {/* Replace 'your-image-url' with actual image */}
               <div className="grid grid-cols-1 gap-4">
-                <img 
+                <Image 
                   src="/bg3.png" 
                   alt="Community Learning"
                   className="rounded-lg w-full"
                 />
-                <img 
+                <Image 
                   src="/krishna.png" 
                   alt="Learning Together"
                   className="rounded-lg w-full"

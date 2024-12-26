@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link'
 
 type StudyDepth = 'quick' | 'medium' | 'well';
 
@@ -181,6 +182,7 @@ const Learn: React.FC = () => {
 
   return (
     <div className="bg-gradient min-h-screen">
+      <div className='pt-12'></div>
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
           <div className="feature-card p-8 rounded-xl bg-white shadow-soft hover:shadow-xl transition-shadow duration-300 max-w-2xl w-full">
@@ -268,6 +270,15 @@ const Learn: React.FC = () => {
                     <p className="text-purple-600 mt-4 text-lg">
                       Recommended Gita: {gitaRecommendation}
                     </p>
+                    <div className='pt-4'>
+                      <Link href = '/api/auth/me'>
+                        <button
+                          onClick = {() => window.location.reload()} 
+                          className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all">
+                          Continue
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>

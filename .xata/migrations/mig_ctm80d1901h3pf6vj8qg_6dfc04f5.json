@@ -1,0 +1,17 @@
+{
+  "id": "mig_ctm80d1901h3pf6vj8qg",
+  "parentID": "mig_ctm8071901h3pf6vj8pg",
+  "checksum": "1:6dfc04f5ae0cd6c72ab97d3534f2b222868c898bc69eac885e2cb1cdae821bad",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "verse",
+          "type": "int",
+          "defaultValue": "0"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}
