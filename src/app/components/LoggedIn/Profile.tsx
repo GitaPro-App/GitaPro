@@ -2,24 +2,61 @@
 
 import { useState, useEffect } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
+import chapterData from '../../../../json-database/chapter-1.json';
 
+interface Verse {
+  transliteration: string;
+  translation: string;
+  verse: number;
+}
 
-
+const MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000; 
 
 const UserDashboard = () => {
   const { user } = useUser();
   const [totalProgress, setTotalProgress] = useState<number>(0);
-  const [verseOfTheDay, setVerseOfTheDay] = useState<string>('');
-
+  const [verseOfTheDay, setVerseOfTheDay] = useState<Verse | null>(null);
+  const [verses, setVerses] = useState<Verse[]>([]);
 
   useEffect(() => {
-    // Simulating total progress (replace with actual data)
+    console.log('useEffect running');
     setTotalProgress(Math.floor(Math.random() * 701));
 
-    // Fetch verse of the day (replace with actual API call)
-    setVerseOfTheDay("This is a placeholder for the verse of the day.");
+    const formattedVerses = Object.entries(chapterData).map(([key, value]) => ({
+      verse: parseInt(key),
+      transliteration: value.transliteration,
+      translation: value.translation
+    }));
+    
+    setVerses(formattedVerses);
+
+    // Set initial verse immediately
+    setRandomVerse(formattedVerses);
+
+    // Set up interval to change verse every day
+    const intervalId = setInterval(() => {
+      
+      setRandomVerse(formattedVerses);
+    }, MILLISECONDS_IN_DAY);
+
+    // Clean up interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
+  const setRandomVerse = (versesArray: Verse[]) => {
+    
+    if (versesArray.length > 0) {
+      const today = new Date().toDateString(); // Get current date as string
+      const seed = today.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+      const randomIndex = seed % versesArray.length;
+      const selectedVerse = versesArray[randomIndex];
+      console.log('Selected verse:', selectedVerse);
+      setVerseOfTheDay(selectedVerse);
+    } else {
+
+    }
+  };
+  
   const chapters = [
     { id: 1, title: "Arjuna's Dilemma", numberVerses: 46, userProgress: 5 },
     { id: 2, title: "Sankhya Yoga", numberVerses: 72, userProgress: 5 },
@@ -46,7 +83,13 @@ const UserDashboard = () => {
         
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-purple-600 mb-4">Verse of the Day</h2>
-          <p className="text-gray-700 italic">{verseOfTheDay}</p>
+          {verseOfTheDay && (
+            <div>
+              <p className="text-gray-700 italic mb-2">{verseOfTheDay.transliteration}</p>
+              <p className="text-gray-600">{verseOfTheDay.translation}</p>
+              <p className="text-sm text-gray-500 mt-2">Verse {verseOfTheDay.verse}</p>
+            </div>
+          )}
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">

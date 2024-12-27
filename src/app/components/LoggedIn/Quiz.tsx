@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import { useUser } from '@auth0/nextjs-auth0/client';
+
 
 type StudyDepth = 'quick' | 'medium' | 'well';
 
@@ -16,6 +18,8 @@ interface QuizQuestion {
   question: string;
   options: string[];
 }
+
+
 
 const quizQuestions: QuizQuestion[] = [
   {
@@ -93,20 +97,52 @@ const quizQuestions: QuizQuestion[] = [
 ];
 
 const Learn: React.FC = () => {
-  const [daysPerWeek, setDaysPerWeek] = useState<number>(0);
+  
   const [minutesPerDay, setMinutesPerDay] = useState<number>(0);
   const [studyDepth, setStudyDepth] = useState<StudyDepth | ''>('');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [gitaRecommendation, setGitaRecommendation] = useState('');
+  const { user } = useUser();
+
+
+
+  const handleSubmitPreferences = async () => {
+    if (!user || !minutesPerDay || !studyDepth || !gitaRecommendation) return;
+
+    try {
+      const response = await fetch('/api/updatePreferences', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          sub: user?.sub,
+          minutesPerDay,
+          depth: studyDepth,
+          gitaType: gitaRecommendation,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to update user preferences');
+      }
+
+      // Handle successful update (e.g., show a success message or redirect)
+      console.log('User preferences updated successfully');
+    } catch (error) {
+      console.error('Error updating user preferences:', error);
+    }
+  };
+
 
   const calculateLearningDuration = (): string | null => {
-    if (!daysPerWeek || !minutesPerDay || !studyDepth) return null;
+    if ( !minutesPerDay || !studyDepth) return null;
     const depthFactor: Record<StudyDepth, number> = {
       'quick': 2, 'medium': 3, 'well': 4
     };
-    const weeklyMinutes = (minutesPerDay / depthFactor[studyDepth]) * daysPerWeek;
+    const weeklyMinutes = (minutesPerDay / depthFactor[studyDepth]) * 7;
     const finalDuration = Math.round((700 / weeklyMinutes) * 7);
     return `${finalDuration} days`;
   };
@@ -189,19 +225,7 @@ const Learn: React.FC = () => {
             <h1 className="text-3xl font-semibold mb-8 text-gray-800">
               Customize Your Learning Journey
             </h1>
-
             <div className="space-y-8">
-              <div>
-                <h2 className="text-xl text-gray-700 mb-4">
-                  How many days per week would you like to learn?
-                </h2>
-                <SelectionBar<number>
-                  options={[1, 2, 3, 4, 5, 6, 7]}
-                  value={daysPerWeek}
-                  onChange={setDaysPerWeek}
-                />
-              </div>
-
               <div>
                 <h2 className="text-xl text-gray-700 mb-4">
                   How many minutes per day can you dedicate?
@@ -213,7 +237,6 @@ const Learn: React.FC = () => {
                   displayValue={(v) => `${v} min`}
                 />
               </div>
-
               <div>
                 <h2 className="text-xl text-gray-700 mb-4">
                   What level of study depth do you prefer?
@@ -226,15 +249,13 @@ const Learn: React.FC = () => {
                 />
               </div>
 
-              {(daysPerWeek && minutesPerDay && studyDepth) ? (
+              {( minutesPerDay && studyDepth) ? (
                 <div className="mt-8 p-6 bg-purple-50 rounded-lg">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     Your Learning Path
                   </h3>
                   <p className="text-gray-600">
                     With your selected preferences:
-                    <br />
-                    {daysPerWeek} days per week
                     <br />
                     {minutesPerDay} minutes per day
                     <br />
@@ -271,12 +292,13 @@ const Learn: React.FC = () => {
                       Recommended Gita: {gitaRecommendation}
                     </p>
                     <div className='pt-4'>
-                      <Link href = '/api/auth/me'>
-                        <button
-                          onClick = {() => window.location.reload()} 
-                          className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all">
-                          Continue
-                        </button>
+                      <Link href = '/'>
+                      <button
+                          onClick={handleSubmitPreferences}
+                          className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all"
+                      >
+                          Save Preferences and Continue
+                      </button>
                       </Link>
                     </div>
                   </div>

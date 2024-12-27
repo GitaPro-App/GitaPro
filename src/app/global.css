@@ -3,14 +3,125 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  /* Primary Colors */
+  --primary-main: #8B5CF6;
+  --primary-light: #A78BFA;
+  --primary-dark: #7C3AED;
+
+  /* Secondary Colors */
+  --secondary-main: #F59E0B;
+  --secondary-light: #FBBF24;
+  --secondary-dark: #D97706;
+
+  /* Accent Colors */
+  --accent-main: #10B981;
+  --accent-light: #34D399;
+  --accent-dark: #059669;
+
+  /* Neutral Colors */
+  --neutral-100: #F3F4F6;
+  --neutral-200: #E5E7EB;
+  --neutral-300: #D1D5DB;
+  --neutral-400: #9CA3AF;
+  --neutral-500: #6B7280;
+  --neutral-600: #4B5563;
+  --neutral-700: #374151;
+  --neutral-800: #1F2937;
+  --neutral-900: #111827;
+
+  /* Text Colors */
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-600);
+  --text-tertiary: var(--neutral-400);
+
+  /* Background Colors */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: var(--neutral-100);
+  --bg-tertiary: var(--neutral-200);
+
+  /* Button Colors */
+  --btn-primary-bg: var(--primary-main);
+  --btn-primary-text: #FFFFFF;
+  --btn-secondary-bg: var(--neutral-200);
+  --btn-secondary-text: var(--neutral-800);
+
+  /* Link Colors */
+  --link-color: var(--primary-main);
+  --link-hover-color: var(--primary-dark);
+
+  /* Border Colors */
+  --border-color: var(--neutral-300);
+
+  /* Success, Error, Warning Colors */
+  --success-color: #10B981;
+  --error-color: #EF4444;
+  --warning-color: #F59E0B;
 }
 
+/* Typography */
+.text-heading-1 {
+  color: var(--text-primary);
+}
 
+.text-heading-2 {
+  color: var(--text-primary);
+}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  
+.text-body {
+  color: var(--text-secondary);
+}
+
+.text-small {
+  color: var(--text-tertiary);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Backgrounds */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--bg-tertiary);
+}
+
+/* Borders */
+.border {
+  border-color: var(--border-color);
+}
+
+/* Status Colors */
+.text-success {
+  color: var(--success-color);
+}
+
+.text-error {
+  color: var(--error-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
 }
