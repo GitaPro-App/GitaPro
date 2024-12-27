@@ -1,0 +1,13 @@
+{
+  "id": "mig_ctfpjel7965n01fhs5hg",
+  "parentID": "mig_cteh6ut7965n01fhrqa0",
+  "checksum": "1:e836db6a964005b56a8932186516d6e2a31029330019dc6ffce022f85b61c4a7",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "Chapter-2",
+        "oldName": "Chapter2"
+      }
+    }
+  ]
+}

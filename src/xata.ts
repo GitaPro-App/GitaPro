@@ -8,19 +8,12 @@ import type {
 
 const tables = [
   {
-    name: "Chapter-1",
+    name: "Users",
     columns: [
-      { name: "Verse", type: "int" },
-      { name: "Transliteration", type: "text" },
-      { name: "Translation", type: "text" },
-    ],
-  },
-  {
-    name: "Chapter2",
-    columns: [
-      { name: "Verse", type: "float" },
-      { name: "Transliteration", type: "text" },
-      { name: "Translation", type: "text" },
+      { name: "name", type: "text" },
+      { name: "email", type: "text", defaultValue: "" },
+      { name: "sub", type: "text" },
+      { name: "verse", type: "int", defaultValue: "0" },
     ],
   },
 ] as const;
@@ -28,15 +21,11 @@ const tables = [
 export type SchemaTables = typeof tables;
 export type InferredTypes = SchemaInference<SchemaTables>;
 
-export type Chapter1 = InferredTypes["Chapter-1"];
-export type Chapter1Record = Chapter1 & XataRecord;
-
-export type Chapter2 = InferredTypes["Chapter2"];
-export type Chapter2Record = Chapter2 & XataRecord;
+export type Users = InferredTypes["Users"];
+export type UsersRecord = Users & XataRecord;
 
 export type DatabaseSchema = {
-  "Chapter-1": Chapter1Record;
-  Chapter2: Chapter2Record;
+  Users: UsersRecord;
 };
 
 const DatabaseClient = buildClient();
@@ -60,4 +49,3 @@ export const getXataClient = () => {
   instance = new XataClient();
   return instance;
 };
-
