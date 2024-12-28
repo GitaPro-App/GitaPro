@@ -29,20 +29,24 @@ const AboutUs: React.FC = () => {
               </p>
             </div>
             <div className="flex-1">
-              {/* Replace 'your-image-url' with actual image */}
               <div className="grid grid-cols-1 gap-4">
                 <Image 
                   src="/bg3.png" 
                   alt="Community Learning"
                   className="rounded-lg w-full"
+                  width={500}
+                  height={300}
                 />
                 <Image 
                   src="/krishna.png" 
                   alt="Learning Together"
                   className="rounded-lg w-full"
+                  width={500}
+                  height={300}
                 />
               </div>
             </div>
+
           </div>
         </div>
 
