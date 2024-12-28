@@ -87,7 +87,7 @@ function RotatingText() {
               damping: 30,
               duration: 3
             }}
-            className="text-purple-600 whitespace-nowrap"
+            className="text-[#e76e50] whitespace-nowrap"
           >
             {words[currentIndex]}
           </motion.span>
