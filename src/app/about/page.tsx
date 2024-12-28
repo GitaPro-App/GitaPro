@@ -1,7 +1,7 @@
 // app/login/page.tsx
 import About from '../components/NotLoggedIn/about';
 import Navbar from '../components/NotLoggedIn/Navbar'; 
-import Footer from '../components/NotLoggedIn/Footer';
+import Footer from '../components/Footer';
 
 
 

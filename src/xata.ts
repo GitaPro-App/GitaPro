@@ -14,6 +14,7 @@ const tables = [
       { name: "email", type: "text", defaultValue: "" },
       { name: "sub", type: "text" },
       { name: "verse", type: "int", defaultValue: "0" },
+      { name: "preferences", type: "text" },
     ],
   },
 ] as const;

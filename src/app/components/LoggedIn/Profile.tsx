@@ -16,6 +16,7 @@ const UserDashboard = () => {
   const { user } = useUser();
   const [totalProgress, setTotalProgress] = useState<number>(0);
   const [verseOfTheDay, setVerseOfTheDay] = useState<Verse | null>(null);
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   const [verses, setVerses] = useState<Verse[]>([]);
 
   useEffect(() => {

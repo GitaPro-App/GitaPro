@@ -7,7 +7,7 @@ import Body from "./components/LoggedIn/Profile";
 import Navbar1 from "./components/NotLoggedIn/Navbar";
 import Body2 from "./components/NotLoggedIn/LandingPage";
 import Quiz from "./components/LoggedIn/Quiz";
-import Footer from './components/NotLoggedIn/Footer';
+import Footer from './components/Footer';
 
 
 export default function Home() {

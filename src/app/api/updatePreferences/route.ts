@@ -35,7 +35,7 @@ export async function POST(request: Request) {
       });
       
       return NextResponse.json({ success: true, user: updatedUser });
-    } catch (error) {
+    } catch {
       return NextResponse.json(
         { error: 'Failed to update user preferences' },
         { status: 500 }

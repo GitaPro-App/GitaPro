@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Chapter2Component from '../../components/LoggedIn/ChapterPages/Chapter2';
 import Navbar from '../../components/LoggedIn/Navbar';
-import Footer from '../../components/NotLoggedIn/Footer';
+import Footer from '../../components/Footer';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 
