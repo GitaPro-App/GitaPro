@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import '../style.css';
 import RotatingText from './HeadLine';
+import Link from 'next/link';
 
 export default function LandingPage() {
   return (
@@ -15,9 +16,11 @@ export default function LandingPage() {
         </div>
     
         <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-4 pt-4"> 
-          <button className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all">
-            START YOUR JOURNEY
-          </button>
+          <Link href="/api/auth/signup">
+            <button className="bg-purple-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-800 transition-all">
+              START YOUR JOURNEY
+            </button>
+          </Link>
           <button className="border-2 border-purple-700 text-purple-700 px-8 py-4 rounded-lg font-medium hover:bg-purple-50 transition-all">
             EXPLORE FEATURES →
           </button>
