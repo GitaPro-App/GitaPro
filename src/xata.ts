@@ -15,6 +15,7 @@ const tables = [
       { name: "sub", type: "text" },
       { name: "verse", type: "int", defaultValue: "0" },
       { name: "preferences", type: "text" },
+      { name: "versesRead", type: "json" },
     ],
   },
 ] as const;

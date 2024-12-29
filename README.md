@@ -63,10 +63,6 @@ GitaPro is a web application designed to help users learn and understand the Bha
 - Auth0
 - Xata
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License.

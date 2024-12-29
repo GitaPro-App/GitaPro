@@ -39,13 +39,13 @@ export default function Navbar() {
               <div className="flex items-center space-x-4">
                 <ul className="flex space-x-4">
                   <li>
-                    <Link href="/" className="text-white transition-colors">Learn</Link>
+                    <Link href="/" className="text-white hover:text-gray-200 transition-colors">Learn</Link>
                   </li>
                   <li>
-                    <Link href="/settings" className=":text-white transition-colors">Settings</Link>
+                    <Link href="/settings" className="text-white hover:text-gray-200 transition-colors">Settings</Link>
                   </li>
                   <li>
-                    <Link href="/api/auth/logout" className="text-white transition-colors">Logout</Link>
+                    <Link href="/api/auth/logout" className="text-white hover:text-gray-200 transition-colors">Logout</Link>
                   </li>
                 </ul>
               </div>

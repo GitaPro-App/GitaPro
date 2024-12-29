@@ -10,57 +10,73 @@ interface Verse {
   verse: number;
 }
 
-const MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000; 
+interface ChapterProgress {
+  id: number;
+  title: string;
+  numberVerses: number;
+  userProgress: number;
+}
+
+const MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000;
 
 const UserDashboard = () => {
-  const { user } = useUser();
+  const { user, isLoading } = useUser();
   const [totalProgress, setTotalProgress] = useState<number>(0);
   const [verseOfTheDay, setVerseOfTheDay] = useState<Verse | null>(null);
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  const [verses, setVerses] = useState<Verse[]>([]);
+  const [chaptersProgress, setChaptersProgress] = useState<ChapterProgress[]>([]);
 
   useEffect(() => {
-    console.log('useEffect running');
-    setTotalProgress(Math.floor(Math.random() * 701));
+    if (!user?.sub) return;
 
+    const fetchProgress = async () => {
+      try {
+        const response = await fetch(`/api/verses?sub=${user.sub}`);
+        const data = await response.json();
+        
+        setTotalProgress(data.totalVersesRead);
+
+        const updatedChapters = chapters.map(chapter => ({
+          ...chapter,
+          userProgress: data.versesRead[chapter.id]?.length || 0
+        }));
+        setChaptersProgress(updatedChapters);
+      } catch (error) {
+        console.error('Error fetching progress:', error);
+      }
+    };
+
+    fetchProgress();
+  }, [user?.sub]);
+
+  useEffect(() => {
     const formattedVerses = Object.entries(chapterData).map(([key, value]) => ({
       verse: parseInt(key),
       transliteration: value.transliteration,
       translation: value.translation
     }));
     
-    setVerses(formattedVerses);
-
-    // Set initial verse immediately
     setRandomVerse(formattedVerses);
 
-    // Set up interval to change verse every day
     const intervalId = setInterval(() => {
-      
       setRandomVerse(formattedVerses);
     }, MILLISECONDS_IN_DAY);
 
-    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
+
   const setRandomVerse = (versesArray: Verse[]) => {
-    
     if (versesArray.length > 0) {
-      const today = new Date().toDateString(); // Get current date as string
+      const today = new Date().toDateString();
       const seed = today.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
       const randomIndex = seed % versesArray.length;
-      const selectedVerse = versesArray[randomIndex];
-      console.log('Selected verse:', selectedVerse);
-      setVerseOfTheDay(selectedVerse);
-    } else {
-
+      setVerseOfTheDay(versesArray[randomIndex]);
     }
   };
   
   const chapters = [
-    { id: 1, title: "Arjuna's Dilemma", numberVerses: 46, userProgress: 5 },
-    { id: 2, title: "Sankhya Yoga", numberVerses: 72, userProgress: 5 },
+    { id: 1, title: "Arjuna's Dilemma", numberVerses: 46, userProgress: 0 },
+    { id: 2, title: "Sankhya Yoga", numberVerses: 72, userProgress: 0 },
     { id: 3, title: "Karma Yoga", numberVerses: 43, userProgress: 0 },
     { id: 4, title: "Jnana Yoga", numberVerses: 42, userProgress: 0 },
     { id: 5, title: "Karma Sanyasa Yoga", numberVerses: 29, userProgress: 0 },
@@ -76,6 +92,10 @@ const UserDashboard = () => {
     { id: 15, title: "Purushottama Yoga", numberVerses: 20, userProgress: 0 },
     { id: 16, title: "Daivasura Sampad Vibhaga Yoga", numberVerses: 24, userProgress: 0 },
   ];
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <main className="min-h-screen bg-gray-50 pb-12">
@@ -112,7 +132,7 @@ const UserDashboard = () => {
 
         <h3 className="text-2xl font-bold text-purple-600 mb-6">Chapter Progress:</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {chapters.map((chapter) => (
+          {chaptersProgress.map((chapter) => (
             <a href={`/chapter/${chapter.id}`} key={chapter.id} className="block">
               <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-center space-x-4">
