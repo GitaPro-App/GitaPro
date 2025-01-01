@@ -8,9 +8,9 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen mx-auto max-w-6xl">
+    <div className="min-h-screen mx-auto max-w-6xl overflow-x-hidden">
       {/* Hero Section with Rotating Text */}
-      <div className="container mx-auto px-4 pt-16 text-center">
+      <div className="container mx-auto px-4 pt-20 text-center">
         <div className="scale-125 pt-3">
           <RotatingText />
         </div>
