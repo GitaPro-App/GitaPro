@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
 function RotatingText() {
-  const words = ["fast.", "simple.", " easy."];
+  const words = ["fast", "free", " easy"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
