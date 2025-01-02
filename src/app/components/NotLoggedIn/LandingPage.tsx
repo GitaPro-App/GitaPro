@@ -1,32 +1,46 @@
 "use client";
-
 import React from 'react';
 import Image from 'next/image';
-import '../style.css';
 import RotatingText from './HeadLine';
 import Link from 'next/link';
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen mx-auto max-w-6xl overflow-x-hidden">
-      {/* Hero Section with Rotating Text */}
-      <div className="container mx-auto px-4 pt-20 text-center">
-        <div className="scale-125 pt-3">
-          <RotatingText />
-        </div>
-    
-        <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-4 pt-6">
-          <Link href="/api/auth/signup">
-            <button className="bg-[#43698e] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#2c4d6e] transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              START YOUR JOURNEY
+      <div className="container mx-auto px-4 pt-16 md:pt-16 text-center flex flex-col justify-center min-h-screen">
+        <RotatingText />
+        {/* Subtext */}
+        <p className="text-2xl md:text-3xl pt-4 lg:text-4xl text-gray-600 mb-6 max-w-2xl mx-auto">
+          Join a community of learners on a journey to learn the Gita on the #1 dharmic scripture app
+        </p>
+        <div className='pt-4 mb-8'>
+          <Link href="/api/auth/signip">
+            <button className="bg-[#43698e] text-white text-xl md:text-2xl lg:text-3xl px-8 md:px-16 lg:px-28 py-4 md:py-6 lg:py-8 rounded-full font-medium hover:bg-[#c9dde8] transition-all duration-300">
+              Try GitaPro for Free
             </button>
           </Link>
-          <button className="border-2 border-[#43698e] text-[#43698e] px-8 py-4 rounded-lg font-medium hover:bg-[#43698e] hover:text-white transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-            EXPLORE FEATURES →
-          </button>
         </div>
 
-        <p className="text-gray-700 mt-4 mb-12 text-lg">Begin your spiritual journey for free, no commitments</p>
+        {/* Horizontal Gallery */}
+        <div className="flex justify-center items-center mb-16">
+          <div className="flex gap-4 pb-8 ">
+            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#fad2ad] rounded-2xl p-5">
+              <div className="w-full h-full overflow-hidden rounded-xl">
+                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#c9dde8] rounded-2xl p-5">
+              <div className="w-full h-full overflow-hidden rounded-xl">
+                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#f0f0f0] rounded-2xl p-5">
+              <div className="w-full h-full overflow-hidden rounded-xl">
+                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Main Features */}
         <div className="space-y-20">
@@ -47,7 +61,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-          
+
           {/* Progress Tracking */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-left space-y-6">
@@ -110,8 +124,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
-          <div className="h-4"></div>
         </div>
       </div>
     </div>
