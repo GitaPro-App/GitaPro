@@ -49,7 +49,7 @@ function RotatingText() {
 
   return (
     <div ref={containerRef} className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px] overflow-visible relative px-2 sm:px-4">
-    <motion.div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center text-center flex-wrap gap-1 sm:gap-2 leading-tight sm:leading-[1.25]">
+    <motion.div className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center text-center flex-wrap gap-1 sm:gap-2 leading-tight sm:leading-[1.25]">
       <span>Learning the Bhagvad Gita</span>
       <span>made&nbsp;</span>
       <AnimatePresence mode="wait">
