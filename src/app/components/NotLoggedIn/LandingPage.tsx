@@ -45,14 +45,10 @@ export default function LandingPage() {
       </div>
 
       <div className="py-12 sm:py-16 md:py-24">
-        <div className="space-y-12 sm:space-y-16 md:space-y-24">
+        <div className="space-y-24 sm:space-y-32 md:space-y-40">
           
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
-            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all overflow-hidden">
-              <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
-            </div>
-            <div className="text-left space-y-4 sm:space-y-6 order-1 md:order-2">
+            <div className="text-left space-y-4 sm:space-y-6">
               <div className="text-center">
                 <h2 className="text-[#FFB703] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
                   Free. Fun. Effective.
@@ -62,11 +58,14 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
+            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl transform hover:scale-105 transition-all overflow-hidden">
+              <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
+            </div>
           </div>
 
-          {/* Feature Section 2 */}
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
-            <div className="text-left space-y-4 sm:space-y-6 order-1">
+          <div className="pt-8 grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
+            <div className="text-left space-y-4 sm:space-y-6">
               <div className="text-center">
                 <h2 className="text-[#3b2d5c] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
                   Personalized Learning
@@ -76,19 +75,14 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-            <div className="relative bg-[#3b2d5c] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 transform hover:scale-105 transition-all overflow-hidden">
+            <div className="relative bg-[#3b2d5c] rounded-3xl p-4 sm:p-6 shadow-2xl transform hover:scale-105 transition-all overflow-hidden">
               <Image src="/bg3.png" alt="Personalized Learning Path" width={600} height={400} className="rounded-2xl" />
               <div className="absolute inset-0 bg-gradient-to-bl from-[#3b2d5c] to-transparent opacity-40"></div>
             </div>
           </div>
 
-          {/* Feature Section 3 */}
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
-            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all overflow-hidden">
-              <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
-            </div>
-            <div className="text-left space-y-4 sm:space-y-6 order-1 md:order-2">
+          <div className="pt-8 grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
+            <div className="text-left space-y-4 sm:space-y-6">
               <div className="text-center">
                 <h2 className="text-[#FFB703] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
                   Free. Fun. Effective.
@@ -98,10 +92,16 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
+            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl transform hover:scale-105 transition-all overflow-hidden">
+              <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
+            </div>
           </div>
 
         </div>
       </div>
+
+
     </div>
   );
 }
