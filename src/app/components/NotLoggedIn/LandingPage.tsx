@@ -1,129 +1,105 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import RotatingText from './HeadLine';
 import Link from 'next/link';
+import RotatingText from './HeadLine';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen mx-auto max-w-6xl overflow-x-hidden">
-      <div className="container mx-auto px-4 pt-16 md:pt-16 text-center flex flex-col justify-center min-h-screen">
-        <RotatingText />
-        {/* Subtext */}
-        <p className="text-2xl md:text-3xl pt-4 lg:text-4xl text-gray-600 mb-6 max-w-2xl mx-auto">
-          Join a community of learners on a journey to learn the Gita on the #1 dharmic scripture app
-        </p>
-        <div className='pt-4 mb-8'>
-          <Link href="/api/auth/signip">
-            <button className="bg-[#43698e] text-white text-xl md:text-2xl lg:text-3xl px-8 md:px-16 lg:px-28 py-4 md:py-6 lg:py-8 rounded-full font-medium hover:bg-[#c9dde8] transition-all duration-300">
-              Try GitaPro for Free
-            </button>
-          </Link>
-        </div>
+    <div className="min-h-screen mx-auto max-w-[2000px] overflow-x-hidden bg-white px-4 lg:px-8">
+      <div className="min-h-screen flex flex-col justify-between">
+        <div className="flex-grow flex items-center justify-center">
+          <div className="container mx-auto text-center flex flex-col items-center justify-center scale-90 sm:scale-100 lg:scale-110 xl:scale-125 2xl:scale-140 transform-gpu">
+            <div className="flex flex-col items-center max-w-3xl mx-auto">
+              <div className="pt-4 mb-6 sm:mb-8">
+                <RotatingText />
+              </div>
+              
+              <div className="relative w-56 sm:w-64 md:w-80 lg:w-96 mb-8 sm:mb-12">
+                <Image 
+                  src="/krishna.png"
+                  alt="GitaPro App"
+                  width={400}
+                  height={400}
+                  priority
+                  className="w-full h-auto rounded-3xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#3b2d5c] to-transparent opacity-30 rounded-3xl"></div>
+              </div>
 
-        {/* Horizontal Gallery */}
-        <div className="flex justify-center items-center mb-16">
-          <div className="flex gap-4 pb-8 ">
-            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#fad2ad] rounded-2xl p-5">
-              <div className="w-full h-full overflow-hidden rounded-xl">
-                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#c9dde8] rounded-2xl p-5">
-              <div className="w-full h-full overflow-hidden rounded-xl">
-                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="flex-none w-56 md:w-64 lg:w-72 h-72 md:h-80 lg:h-96 bg-[#f0f0f0] rounded-2xl p-5">
-              <div className="w-full h-full overflow-hidden rounded-xl">
-                <Image src="/bg.png" alt="AI-Powered Learning" width={600} height={400} className="w-full h-full object-cover" />
+              <div className="flex flex-col gap-3 sm:gap-4 w-full max-w-sm sm:max-w-md">
+                <Link href="/signup" className="w-full">
+                  <button className="w-full bg-[#3b2d5c] text-white font-bold text-base sm:text-lg py-3 sm:py-4 rounded-2xl hover:bg-[#5a4a7d] transition-all duration-300 shadow-lg">
+                    GET STARTED
+                  </button>
+                </Link>
+                <Link href="/login" className="w-full">
+                  <button className="w-full bg-[#FFB703] text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-2xl hover:bg-[#fcb154] transition-all duration-300 shadow-lg">
+                    I ALREADY HAVE AN ACCOUNT
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Main Features */}
-        <div className="space-y-20">
-          {/* Personalized Learning */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-[#fad2ad] rounded-3xl p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all">
+      <div className="py-12 sm:py-16 md:py-24">
+        <div className="space-y-12 sm:space-y-16 md:space-y-24">
+          
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
+            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all overflow-hidden">
               <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
             </div>
-            <div className="text-left space-y-6 order-1 md:order-2">
-              <h3 className="text-sm font-bold text-[#fcb154] tracking-wider">PERSONALIZED JOURNEY</h3>
-              <h2 className="text-gray-900 text-3xl font-bold leading-tight">Lessons catered to your personality</h2>
-              <p className="text-gray-700 text-lg">
-                GitaPro understands your approach to life, spiritual interests, and goals to create a personalized path through the Gita's teachings.
-              </p>
-              <div className="bg-[#fad2ad] p-4 rounded-xl shadow-lg">
-                <p className="text-[#fcb154] font-bold text-3xl mb-1">100+</p>
-                <p className="text-gray-700">unique learning paths designed for various personality types</p>
+            <div className="text-left space-y-4 sm:space-y-6 order-1 md:order-2">
+              <div className="text-center">
+                <h2 className="text-[#FFB703] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
+                  Free. Fun. Effective.
+                </h2>
+                <p className="text-black text-lg sm:text-xl leading-relaxed">
+                  Learning with GitaPro is fun, and research shows that it works! With quick, bite-sized lessons, you'll earn points and unlock new levels while gaining spiritual wisdom.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Progress Tracking */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-left space-y-6">
-              <h3 className="text-sm font-bold text-[#43698e] tracking-wider">PROGRESS TRACKING</h3>
-              <h2 className="text-gray-900 text-3xl font-bold leading-tight">Transform everyday learning</h2>
-              <p className="text-gray-700 text-lg">
-                Track your spiritual progress with interactive learning modules. Set goals, maintain streaks, and see your understanding deepen over time.
-              </p>
-              <div className="bg-[#c9dde8] p-4 rounded-xl shadow-lg">
-                <p className="text-[#43698e] font-bold text-3xl mb-1">365</p>
-                <p className="text-gray-700">daily reflections to keep you motivated throughout the year</p>
+          {/* Feature Section 2 */}
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
+            <div className="text-left space-y-4 sm:space-y-6 order-1">
+              <div className="text-center">
+                <h2 className="text-[#3b2d5c] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
+                  Personalized Learning
+                </h2>
+                <p className="text-black text-lg sm:text-xl leading-relaxed">
+                  Advanced AI technology adapts to your learning style and pace. Track your progress, receive customized recommendations, and master the Gita's teachings at your own speed.
+                </p>
               </div>
             </div>
-            <div className="bg-[#c9dde8] rounded-3xl p-6 shadow-2xl transform hover:scale-105 transition-all">
-              <Image src="/bg3.png" alt="Progress Dashboard" width={600} height={400} className="rounded-2xl" />
+            <div className="relative bg-[#3b2d5c] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 transform hover:scale-105 transition-all overflow-hidden">
+              <Image src="/bg3.png" alt="Personalized Learning Path" width={600} height={400} className="rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-bl from-[#3b2d5c] to-transparent opacity-40"></div>
             </div>
           </div>
 
-          {/* Community Section */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-[#f0f0f0] rounded-3xl p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all">
-              <Image src="/bg3.png" alt="Community Features" width={600} height={400} className="rounded-2xl" />
+          {/* Feature Section 3 */}
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mx-auto max-w-7xl">
+            <div className="relative bg-[#FFB703] rounded-3xl p-4 sm:p-6 shadow-2xl order-2 md:order-1 transform hover:scale-105 transition-all overflow-hidden">
+              <Image src="/bg3.png" alt="AI-Powered Learning" width={600} height={400} className="rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFB703] to-transparent opacity-40"></div>
             </div>
-            <div className="text-left space-y-6 order-1 md:order-2">
-              <h3 className="text-sm font-bold text-[#7a7a7a] tracking-wider">SPIRITUAL COMMUNITY</h3>
-              <h2 className="text-gray-900 text-3xl font-bold leading-tight">Connect and grow together</h2>
-              <p className="text-gray-700 text-lg">
-                Join study groups, participate in guided discussions, and share insights with fellow students on your spiritual journey.
-              </p>
-              <div className="bg-[#f0f0f0] p-4 rounded-xl shadow-lg">
-                <p className="text-[#7a7a7a] font-bold text-3xl mb-1">24/7</p>
-                <p className="text-gray-700">access to a supportive community of like-minded individuals</p>
+            <div className="text-left space-y-4 sm:space-y-6 order-1 md:order-2">
+              <div className="text-center">
+                <h2 className="text-[#FFB703] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
+                  Free. Fun. Effective.
+                </h2>
+                <p className="text-black text-lg sm:text-xl leading-relaxed">
+                  Learning with GitaPro is fun, and research shows that it works! With quick, bite-sized lessons, you'll earn points and unlock new levels while gaining spiritual wisdom.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Testimonials Section */}
-          <div className="bg-[#faf6f0] py-16 rounded-3xl">
-            <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Users Say</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#fcb154] to-[#fad2ad]"></div>
-                  <p className="text-gray-600 mb-4 text-base">"The personalized approach to understanding the Gita has transformed my daily spiritual practice."</p>
-                  <p className="font-bold text-base">Rahul M.</p>
-                  <p className="text-sm text-gray-500">GitaPro User</p>
-                </div>
-                <div className="bg-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#43698e] to-[#c9dde8]"></div>
-                  <p className="text-gray-600 mb-4 text-base">"I love how the app breaks down complex teachings into digestible daily lessons."</p>
-                  <p className="font-bold text-base">Sarah K.</p>
-                  <p className="text-sm text-gray-500">GitaPro User</p>
-                </div>
-                <div className="bg-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#7a7a7a] to-[#f0f0f0]"></div>
-                  <p className="text-gray-600 mb-4 text-base">"The interactive features make learning ancient wisdom engaging and relevant."</p>
-                  <p className="font-bold text-base">Amit P.</p>
-                  <p className="text-sm text-gray-500">GitaPro User</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

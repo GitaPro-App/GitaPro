@@ -48,39 +48,29 @@ function RotatingText() {
   }, [isAnimating, words.length]);
 
   return (
-    <div
-      ref={containerRef}
-      className="min-h-[100px] md:min-h-[120px] overflow-visible relative px-4 md:px-6"
-    >
-      <motion.div
-        className="text-7xl sm:text-7xl md:text-7xl font-bold flex items-center justify-center text-center flex-wrap gap-2 leading-[1.25]"
-        style={{
-          display: "inline-flex",
-          whiteSpace: "normal", // Allow wrapping on smaller screens
-          textAlign: "center",
-        }}
-      >
-        <span>Learning the Bhagvad Gita</span> {/* Static text */}
-        <span>made&nbsp;</span> {/* Static text */}
-        <AnimatePresence mode="wait">
-          <motion.span
-            key={currentIndex}
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -50, opacity: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 30,
-              duration: 3,
-            }}
-            className="text-[#fcb154]"
-          >
-            {words[currentIndex]}
-          </motion.span>
-        </AnimatePresence>
-      </motion.div>
-    </div>
+    <div ref={containerRef} className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px] overflow-visible relative px-2 sm:px-4">
+    <motion.div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center text-center flex-wrap gap-1 sm:gap-2 leading-tight sm:leading-[1.25]">
+      <span>Learning the Bhagvad Gita</span>
+      <span>made&nbsp;</span>
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={currentIndex}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -50, opacity: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 30,
+            duration: 3,
+          }}
+          className="text-[#FFB703] inline-block"
+        >
+          {words[currentIndex]}
+        </motion.span>
+      </AnimatePresence>
+    </motion.div>
+  </div>
   );
 }
 
