@@ -13,7 +13,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4">
         <div className="absolute inset-0 "></div>
-        <div className="max-w-5xl mx-auto">
+        <div className=" pt-8 max-w-5xl mx-auto">
           <RotatingText />
           <p className="mt-6 text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
             Discover the teachings of the Gita like never before. Personalize
