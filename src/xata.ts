@@ -18,6 +18,15 @@ const tables = [
       { name: "versesRead", type: "json" },
     ],
   },
+  {
+    name: "Classroom",
+    columns: [
+      { name: "code", type: "text" },
+      { name: "student", type: "multiple" },
+      { name: "owner", type: "multiple" },
+      { name: "name", type: "text", notNull: true, defaultValue: "null" },
+    ],
+  },
 ] as const;
 
 export type SchemaTables = typeof tables;
@@ -26,8 +35,12 @@ export type InferredTypes = SchemaInference<SchemaTables>;
 export type Users = InferredTypes["Users"];
 export type UsersRecord = Users & XataRecord;
 
+export type Classroom = InferredTypes["Classroom"];
+export type ClassroomRecord = Classroom & XataRecord;
+
 export type DatabaseSchema = {
   Users: UsersRecord;
+  Classroom: ClassroomRecord;
 };
 
 const DatabaseClient = buildClient();
