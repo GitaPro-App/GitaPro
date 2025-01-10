@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
+import Link from 'next/link'
 
 interface Classroom {
+    code: string;
     id: string;
     name: string;
-    code: string;
 }
   
 
 const Classroom = () => {
-  const [classrooms, setClassrooms] = useState<Classroom[]>([]);
+  const [studentClassrooms, setStudentClassrooms] = useState<Classroom[]>([]);
+  const [teacherClassrooms, setTeacherClassrooms] = useState<Classroom[]>([]);
   const [newClassroomName, setNewClassroomName] = useState('');
   const [codeToJoin, setCodeToJoin] = useState('');
   const [message, setMessage] = useState('');
@@ -20,18 +22,25 @@ const Classroom = () => {
     try {
       const response = await fetch(`/api/getUserClassrooms?sub=${encodeURIComponent(sub)}`);
       const data = await response.json();
-
+  
       if (!response.ok) {
         setMessage(`Error: ${data.error ?? 'Unknown error'}`);
         return;
       }
-      setClassrooms(Array.isArray(data) ? data : []);
+  
+      // Directly access the properties from the response object
+      setStudentClassrooms(data.studentClassrooms || []);
+      setTeacherClassrooms(data.ownerClassrooms || []);
+
+      console.log()
+  
     } catch (err) {
       console.error('Error fetching classrooms:', err);
       setMessage('Failed to fetch user classrooms');
     }
   };
-
+  
+  
   useEffect(() => {
     if (!isLoading && user?.sub) {
       fetchClassrooms(user.sub);
@@ -157,23 +166,45 @@ const Classroom = () => {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#3b2d5c] mb-4">Your Classrooms</h2>
-            {classrooms.length > 0 ? (
+            <h2 className="text-2xl font-semibold text-[#3b2d5c] mb-4">Your Role: Student</h2>
+            {studentClassrooms.length > 0 ? (
               <ul className="divide-y divide-gray-200">
-                {classrooms.map((classroom: Classroom) => (
+                {studentClassrooms.map((classroom: Classroom) => (
                   <li key={classroom.id} className="py-4 flex justify-between items-center">
                     <div>
                       <p className="text-lg font-medium text-gray-900">{classroom.name}</p>
                       <p className="text-sm text-gray-500">Code: {classroom.code}</p>
                     </div>
-                    <button className="px-4 py-2 bg-[#3b2d5c] text-white text-sm font-medium rounded-md hover:bg-opacity-90 transition-colors">
-                      Enter
-                    </button>
+                    <Link href={`/classroom/${classroom.code}?teacher=false`}>
+                        <button className="px-4 py-2 bg-[#3b2d5c] text-white text-sm font-medium rounded-md hover:bg-opacity-90 transition-colors">
+                            Enter
+                        </button>
+                    </Link>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p className="text-gray-500">You haven't joined any classrooms yet.</p>
+              <p className="text-gray-500">You haven't joined any classrooms yet as a student.</p>
+            )}
+            <h2 className="text-2xl font-semibold text-[#3b2d5c] mb-4">Your Role: Teacher</h2>
+            {teacherClassrooms.length > 0 ? (
+              <ul className="divide-y divide-gray-200">
+                {teacherClassrooms.map((classroom: Classroom) => (
+                  <li key={classroom.id} className="py-4 flex justify-between items-center">
+                    <div>
+                      <p className="text-lg font-medium text-gray-900">{classroom.name}</p>
+                      <p className="text-sm text-gray-500">Code: {classroom.code}</p>
+                    </div>
+                    <Link href={`/classroom/${classroom.code}?teacher=true`}>
+                        <button className="px-4 py-2 bg-[#3b2d5c] text-white text-sm font-medium rounded-md hover:bg-opacity-90 transition-colors">
+                            Enter
+                        </button>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-gray-500">You haven't joined any classrooms yet as a teacher.</p>
             )}
           </div>
         </div>

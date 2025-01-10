@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-purple-600 fixed w-full top-0 z-50">
+      <nav className="bg-[#3b2d5c] fixed w-full top-0 z-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0 px-1">
@@ -40,6 +40,9 @@ export default function Navbar() {
                 <ul className="flex space-x-4">
                   <li>
                     <Link href="/" className="text-white hover:text-gray-200 transition-colors">Learn</Link>
+                  </li>
+                  <li>
+                    <Link href="/classroom" className="text-white hover:text-gray-200 transition-colors">Classrooms</Link>
                   </li>
                   <li>
                     <Link href="/settings" className="text-white hover:text-gray-200 transition-colors">Settings</Link>
@@ -74,15 +77,18 @@ export default function Navbar() {
                     <div className="py-4">
                       <div className="space-y-6 px-4">
                         <ul className="space-y-2">
-                          <li>
-                            <Link href="/" className="text-gray-300 hover:text-white transition-colors block py-1">Learn</Link>
-                          </li>
-                          <li>
-                            <Link href="/settings" className="text-gray-300 hover:text-white transition-colors block py-1">Settings</Link>
-                          </li>
-                          <li>
-                            <Link href="/api/auth/logout" className="text-gray-300 hover:text-white transition-colors block py-1">Logout</Link>
-                          </li>
+                        <li>
+                          <Link href="/" className="text-white hover:text-gray-200 transition-colors">Learn</Link>
+                        </li>
+                        <li>
+                          <Link href="/classroom" className="text-white hover:text-gray-200 transition-colors">Classrooms</Link>
+                        </li>
+                        <li>
+                          <Link href="/settings" className="text-white hover:text-gray-200 transition-colors">Settings</Link>
+                        </li>
+                        <li>
+                          <Link href="/api/auth/logout" className="text-white hover:text-gray-200 transition-colors">Logout</Link>
+                        </li>
                         </ul>
                       </div>
                     </div>

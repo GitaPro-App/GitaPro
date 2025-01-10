@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +8,7 @@ export default function LandingPage() {
 
 
   return (
-    <div className="min-h-screen ">
+    <div className="pt-4 min-h-screen ">
       {/* Hero Section */}
       <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4">
         <div className="absolute inset-0 "></div>
@@ -33,7 +32,7 @@ export default function LandingPage() {
             </Link>
           </div>
 
-          <div className=" flex justify-center pt-4">
+          <div className="flex justify-center pt-12">
             <Image
               src="/krishna.png"
               alt="Interactive Learning"
@@ -52,7 +51,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto space-y-16">
           {/* Feature 1 */}
           <div className="flex flex-wrap md:flex-nowrap items-center gap-12">
-            <div className="relative w-full md:w-1/2">
+            <div className=" relative w-full md:w-1/2">
               <Image
                 src="/bg1.jpg"
                 alt="Interactive Learning"
