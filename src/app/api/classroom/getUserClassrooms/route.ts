@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getXataClient } from '@/utils/xataClient';
+import { getXataClient } from '../../../../utils/xataClient';
 
 export async function GET(request: Request) {
   try {

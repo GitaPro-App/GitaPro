@@ -16,12 +16,17 @@ export async function POST(request: Request) {
     // Generate a 6-character random code (uppercase).
     const code = Math.random().toString(36).substring(2, 8).toUpperCase();
   
-    await xata.db.Classroom.create({
+    const classroom = await xata.db.Classroom.create({
       code,
       name,
       student: [],
-      owner: [sub],
+      owner: [sub]
     });
+
+    await xata.db.ClassStream.create({
+      classroom_id: classroom.id
+    });
+
   
     // Return success
     return NextResponse.json({ success: true, code, name }, { status: 200 });

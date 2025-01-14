@@ -20,7 +20,7 @@ const Classroom = () => {
 
   const fetchClassrooms = async (sub: string) => {
     try {
-      const response = await fetch(`/api/getUserClassrooms?sub=${encodeURIComponent(sub)}`);
+      const response = await fetch(`/api/classroom/getUserClassrooms?sub=${encodeURIComponent(sub)}`);
       const data = await response.json();
   
       if (!response.ok) {
@@ -58,7 +58,7 @@ const Classroom = () => {
         return;
       }
 
-      const response = await fetch('/api/createClassroom', {
+      const response = await fetch('/api/classroom/createClassroom', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sub: user.sub, name: newClassroomName }),
@@ -90,7 +90,7 @@ const Classroom = () => {
         return;
       }
 
-      const response = await fetch('/api/joinClassroom', {
+      const response = await fetch('/api/classroom/joinClassroom', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code: codeToJoin, sub: user.sub }),
@@ -175,7 +175,7 @@ const Classroom = () => {
                       <p className="text-lg font-medium text-gray-900">{classroom.name}</p>
                       <p className="text-sm text-gray-500">Code: {classroom.code}</p>
                     </div>
-                    <Link href={`/classroom/${classroom.code}?teacher=false`}>
+                    <Link href={`/classroom/${classroom.id}`}>
                         <button className="px-4 py-2 bg-[#3b2d5c] text-white text-sm font-medium rounded-md hover:bg-opacity-90 transition-colors">
                             Enter
                         </button>
@@ -195,7 +195,7 @@ const Classroom = () => {
                       <p className="text-lg font-medium text-gray-900">{classroom.name}</p>
                       <p className="text-sm text-gray-500">Code: {classroom.code}</p>
                     </div>
-                    <Link href={`/classroom/${classroom.code}?teacher=true`}>
+                    <Link href={`/classroom/${classroom.id}`}>
                         <button className="px-4 py-2 bg-[#3b2d5c] text-white text-sm font-medium rounded-md hover:bg-opacity-90 transition-colors">
                             Enter
                         </button>

@@ -26,6 +26,19 @@ const tables = [
       { name: "owner", type: "multiple" },
       { name: "name", type: "text", notNull: true, defaultValue: "null" },
     ],
+    revLinks: [{ column: "classroom_id", table: "ClassStream" }],
+  },
+  {
+    name: "ClassStream",
+    columns: [
+      { name: "stream", type: "multiple" },
+      {
+        name: "classroom_id",
+        type: "link",
+        link: { table: "Classroom" },
+        unique: true,
+      },
+    ],
   },
 ] as const;
 
@@ -38,9 +51,13 @@ export type UsersRecord = Users & XataRecord;
 export type Classroom = InferredTypes["Classroom"];
 export type ClassroomRecord = Classroom & XataRecord;
 
+export type ClassStream = InferredTypes["ClassStream"];
+export type ClassStreamRecord = ClassStream & XataRecord;
+
 export type DatabaseSchema = {
   Users: UsersRecord;
   Classroom: ClassroomRecord;
+  ClassStream: ClassStreamRecord;
 };
 
 const DatabaseClient = buildClient();
