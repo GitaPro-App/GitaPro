@@ -28,8 +28,12 @@ export async function GET(request: Request) {
         verse: 0
       });
     }
+    if (!existingUser || existingUser["preferences"] == null){ 
+      return NextResponse.json({ isFirstTimeUser: false });
+    } else { 
+      return NextResponse.json({ isFirstTimeUser: true });
+    }
     
-    return NextResponse.json({ isFirstTimeUser: !existingUser });
   } catch {
     return NextResponse.json(
       { error: 'Failed to check user' },
