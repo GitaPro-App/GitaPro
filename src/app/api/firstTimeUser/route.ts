@@ -27,12 +27,17 @@ export async function GET(request: Request) {
         sub: sub,
         verse: 0
       });
-    }
-    if (!existingUser || existingUser["preferences"] == null){ 
-      return NextResponse.json({ isFirstTimeUser: false });
-    } else { 
       return NextResponse.json({ isFirstTimeUser: true });
+    } else if (!existingUser || existingUser["preferences"] == null){ 
+        return NextResponse.json({ isFirstTimeUser: true });
+    } else { 
+        return NextResponse.json({ isFirstTimeUser: false });
     }
+    
+      
+  
+      
+    
     
   } catch {
     return NextResponse.json(

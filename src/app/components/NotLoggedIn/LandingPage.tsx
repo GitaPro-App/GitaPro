@@ -8,119 +8,59 @@ export default function LandingPage() {
 
 
   return (
-    <div className="pt-4 min-h-screen ">
-      {/* Hero Section */}
-      <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4">
-        <div className="absolute inset-0 "></div>
-        <div className=" pt-8 max-w-5xl mx-auto">
-          <RotatingText />
-          <p className="mt-6 text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
-            Discover the teachings of the Gita like never before. Personalize
-            your experience, track your progress, and enjoy gamified learning
-            designed just for you.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/signup">
-              <button className="px-8 py-4 bg-[#3b2d5c] text-white font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all">
-                Get Started for Free
-              </button>
-            </Link>
-            <Link href="/login">
-              <button className="px-8 py-4 bg-[#FFB703] text-black font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all">
-                I Have an Account
-              </button>
-            </Link>
-          </div>
-
-          <div className="flex justify-center pt-12">
-            <Image
-              src="/krishna.png"
-              alt="Interactive Learning"
-              width={600}
-              height={400}
-              className="rounded-3xl shadow-lg transform hover:scale-105 transition-all"
-            />
-          </div>
-
-        
-        </div>
-      </header>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto space-y-16">
-          {/* Feature 1 */}
-          <div className="flex flex-wrap md:flex-nowrap items-center gap-12">
-            <div className=" relative w-full md:w-1/2">
-              <Image
-                src="/bg1.jpg"
-                alt="Interactive Learning"
-                width={600}
-                height={400}
-                className="rounded-3xl shadow-lg transform hover:scale-105 transition-all"
-              />
-            </div>
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#FFB703]">
-                Gamified Learning
-              </h2>
-              <p className="mt-4 text-lg sm:text-xl text-gray-700 leading-relaxed">
-                With bite-sized lessons and engaging challenges, you'll
-                transform your spiritual journey while having fun.
-              </p>
-            </div>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="flex flex-wrap md:flex-nowrap items-center gap-12">
-            <div className="w-full md:w-1/2 order-last md:order-first">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#3b2d5c]">
-                Personalized Learning
-              </h2>
-              <p className="mt-4 text-lg sm:text-xl text-gray-700 leading-relaxed">
-                GitaPro adapts to your learning style and pace. Receive
-                customized recommendations and track your progress like never
-                before.
-              </p>
-            </div>
-            <div className="relative w-full md:w-1/2">
-              <Image
-                src="/bg3.png"
-                alt="Personalized Progress Tracking"
-                width={600}
-                height={400}
-                className="rounded-3xl shadow-lg transform hover:scale-105 transition-all"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#3b2d5c]">
-            Hear From Our Users
-          </h2>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: "Priya", feedback: "This app changed my mornings!" },
-              { name: "Ravi", feedback: "Learning made easy and fun." },
-              { name: "Ananya", feedback: "Perfect for spiritual growth!" },
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1"
-              >
-                <p className="text-gray-600 mb-4">"{testimonial.feedback}"</p>
-                <p className="font-bold text-[#3b2d5c]">- {testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+    <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+      {/* Cosmic Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3A41C6] via-[#4C2C96] to-[#512888] opacity-90"></div>
       
-    </div>
+      {/* Hand-drawn Cosmic Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="cosmic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#B0D3EE" />
+              <stop offset="50%" stopColor="#A5B0E3" />
+              <stop offset="100%" stopColor="#BEAFDD" />
+            </linearGradient>
+          </defs>
+          <path 
+            d="M0,0 C30,40 70,40 100,0 V100 H0 Z" 
+            fill="url(#cosmic-gradient)"
+            className="opacity-20"
+          />
+        </svg>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 pt-8 max-w-5xl mx-auto">
+        <RotatingText />
+        <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
+          Discover the teachings of the Gita like never before. Personalize
+          your experience, track your progress, and enjoy gamified learning
+          designed just for you.
+        </p>
+        
+        {/* CTA Buttons */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link href="/signup">
+            <button className="px-8 py-4 bg-[#FFB703] text-black font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all border-2 border-white/20">
+              Get Started Now
+            </button>
+          </Link>
+        </div>
+
+        {/* Hand-drawn Cosmic Illustration */}
+        <div className="relative mt-12 max-w-2xl mx-auto">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl"></div>
+          <Image
+            src="/krishna.png"
+            alt="Interactive Learning"
+            width={600}
+            height={400}
+            className="relative z-10 rounded-3xl shadow-lg transform hover:scale-105 transition-all"
+          />
+        </div>
+      </div>
+    </header>
+
   );
 }
