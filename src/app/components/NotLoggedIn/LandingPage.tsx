@@ -9,10 +9,7 @@ export default function LandingPage() {
       {/* Darker Astral Background Gradient */}
       <div className="fixed inset-0 bg-gradient-to-br from-[#0d0b2b] via-[#1a1a4d] to-[#2e2e6b] opacity-95"></div>
       
-      {/* Cosmic Hindu Elements */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/mandala-pattern.png')] opacity-10"></div>
-      </div>
+
 
       {/* Enhanced White Stars */}
       <div className="fixed inset-0">
@@ -33,15 +30,6 @@ export default function LandingPage() {
           />
         ))}
       </div>
-
-      {/* Navbar */}
-      <nav className="relative z-10 px-6 py-4 bg-transparent text-white flex justify-between items-center">
-        <h1 className="text-xl font-bold">Spiritual Journey</h1>
-        <ul className="flex gap-4">
-          <li><Link href="#features">Features</Link></li>
-          <li><Link href="/signup">Sign Up</Link></li>
-        </ul>
-      </nav>
 
       {/* Body Section */}
       <main className="flex-grow relative">
