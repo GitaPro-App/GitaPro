@@ -8,9 +8,7 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/* Darker Astral Background Gradient */}
       <div className="fixed inset-0 bg-gradient-to-br from-[#0d0b2b] via-[#1a1a4d] to-[#2e2e6b] opacity-95"></div>
-      
-
-
+    
       {/* Enhanced White Stars */}
       <div className="fixed inset-0">
         {[...Array(100)].map((_, i) => (
@@ -43,7 +41,7 @@ export default function LandingPage() {
             </p>
             
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/signup">
+              <Link href="/api/auth/signup">
                 <button className="px-8 py-4 bg-[#8cace2] text-white font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all border-2 border-white/20 relative overflow-hidden group">
                   <span className="relative z-10">Begin Your Journey</span>
                   <div className="absolute inset-0 bg-[#2e2e6b] opacity-0 group-hover:opacity-100 transition-opacity"></div>
