@@ -62,7 +62,3 @@ GitaPro is a web application designed to help users learn and understand the Bha
 - Tailwind CSS
 - Auth0
 - Xata
-
-## License
-
-This project is licensed under the MIT License.
