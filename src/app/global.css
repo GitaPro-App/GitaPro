@@ -28,6 +28,7 @@
   --neutral-700: #374151;
   --neutral-800: #1F2937;
   --neutral-900: #111827;
+  
 
   /* Text Colors */
   --text-primary: var(--neutral-900);
@@ -196,6 +197,15 @@ a:hover {
 @keyframes pulse {
   0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
   50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-twinkle {
+  animation: twinkle 5s infinite;
 }
 
 

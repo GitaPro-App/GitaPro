@@ -73,7 +73,7 @@ export default function Navbar() {
                 </button>
 
                 {isMenuOpen && (
-                  <div className="absolute top-16 right-0 w-64 bg-purple-900/95 backdrop-blur-sm rounded-lg shadow-xl transform transition-all duration-300 ease-in-out z-40">
+                  <div className="absolute top-16 right-0 w-64 bg-[#1a1a4d] backdrop-blur-sm rounded-lg shadow-xl transform transition-all duration-300 ease-in-out z-40">
                     <div className="py-4">
                       <div className="space-y-6 px-4">
                         <ul className="space-y-2">

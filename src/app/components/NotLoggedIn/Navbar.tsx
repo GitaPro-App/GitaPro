@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-[#3b2d5c] fixed w-full top-0 z-50">
+      <nav className="bg-[#0d0b2b] fixed w-full top-0 z-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -66,7 +66,7 @@ export default function Navbar() {
 
                 {/* Dropdown Menu - Positioned relative to button */}
                 {isMenuOpen && (
-                  <div className="absolute top-16 right-0 w-64 bg-purple-900/95 backdrop-blur-sm rounded-lg shadow-xl transform transition-all duration-300 ease-in-out z-40">
+                  <div className="absolute top-16 right-0 w-64 bg-[#1a1a4d] backdrop-blur-sm rounded-lg shadow-xl transform transition-all duration-300 ease-in-out z-40">
                     <div className="py-4">
                       <div className="space-y-6 px-4">
                         <div className="space-y-3">

@@ -64,7 +64,7 @@ function RotatingText() {
             damping: 30,
             duration: 3,
           }}
-          className="text-[#f78db2] inline-block"
+          className=" text-[#f791b4]"
         >
           {words[currentIndex]}
         </motion.span>

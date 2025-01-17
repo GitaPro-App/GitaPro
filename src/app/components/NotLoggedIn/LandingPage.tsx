@@ -5,62 +5,113 @@ import Link from "next/link";
 import RotatingText from "./HeadLine";
 
 export default function LandingPage() {
-
-
   return (
-    <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-      {/* Cosmic Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#3A41C6] via-[#4C2C96] to-[#512888] opacity-90"></div>
+    <div className="flex flex-col min-h-screen overflow-hidden">
+      {/* Darker Astral Background Gradient */}
+      <div className="fixed inset-0 bg-gradient-to-br from-[#0d0b2b] via-[#1a1a4d] to-[#2e2e6b] opacity-95"></div>
       
-      {/* Hand-drawn Cosmic Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="cosmic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#B0D3EE" />
-              <stop offset="50%" stopColor="#A5B0E3" />
-              <stop offset="100%" stopColor="#BEAFDD" />
-            </linearGradient>
-          </defs>
-          <path 
-            d="M0,0 C30,40 70,40 100,0 V100 H0 Z" 
-            fill="url(#cosmic-gradient)"
-            className="opacity-20"
-          />
-        </svg>
+      {/* Cosmic Hindu Elements */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[url('/mandala-pattern.png')] opacity-10"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 pt-8 max-w-5xl mx-auto">
-        <RotatingText />
-        <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
-          Discover the teachings of the Gita like never before. Personalize
-          your experience, track your progress, and enjoy gamified learning
-          designed just for you.
-        </p>
-        
-        {/* CTA Buttons */}
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Link href="/signup">
-            <button className="px-8 py-4 bg-[#FFB703] text-black font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all border-2 border-white/20">
-              Get Started Now
-            </button>
-          </Link>
-        </div>
-
-        {/* Hand-drawn Cosmic Illustration */}
-        <div className="relative mt-12 max-w-2xl mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl"></div>
-          <Image
-            src="/krishna.png"
-            alt="Interactive Learning"
-            width={600}
-            height={400}
-            className="relative z-10 rounded-3xl shadow-lg transform hover:scale-105 transition-all"
+      {/* Enhanced White Stars */}
+      <div className="fixed inset-0">
+        {[...Array(100)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full animate-twinkle"
+            style={{
+              width: Math.random() * 4 + 'px',
+              height: Math.random() * 4 + 'px',
+              top: Math.random() * 100 + '%',
+              left: Math.random() * 100 + '%',
+              backgroundColor: '#ffffff',
+              opacity: 0.8,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${Math.random() * 3 + 2}s`
+            }}
           />
-        </div>
+        ))}
       </div>
-    </header>
 
+      {/* Navbar */}
+      <nav className="relative z-10 px-6 py-4 bg-transparent text-white flex justify-between items-center">
+        <h1 className="text-xl font-bold">Spiritual Journey</h1>
+        <ul className="flex gap-4">
+          <li><Link href="#features">Features</Link></li>
+          <li><Link href="/signup">Sign Up</Link></li>
+        </ul>
+      </nav>
+
+      {/* Body Section */}
+      <main className="flex-grow relative">
+        {/* Hero Section */}
+        <header className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+          <div className="relative z-10 pt-8 max-w-5xl mx-auto">
+            <RotatingText />
+            <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
+              Discover ancient wisdom through modern technology. Experience the divine
+              connection in every interaction.
+            </p>
+            
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <Link href="/signup">
+                <button className="px-8 py-4 bg-[#8cace2] text-white font-bold text-lg rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all border-2 border-white/20 relative overflow-hidden group">
+                  <span className="relative z-10">Begin Your Journey</span>
+                  <div className="absolute inset-0 bg-[#2e2e6b] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </button>
+              </Link>
+            </div>
+          </div>
+        </header>
+
+        {/* Features Section */}
+        <section id="features" className="py-24">
+          <div className="relative z-10 container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Key Features
+              </h2>
+              <p className="text-lg text-white/70">
+                Everything you need to enhance your spiritual journey
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Meditation Tracking",
+                  description: "Track your daily meditation progress and insights",
+                  icon: "🧘‍♂️"
+                },
+                {
+                  title: "Sacred Texts",
+                  description: "Access ancient wisdom and sacred teachings",
+                  icon: "📚"
+                },
+                {
+                  title: "Community",
+                  description: "Connect with like-minded spiritual seekers",
+                  icon: "🤝"
+                }
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all"
+                >
+                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-white/70">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    </div>
   );
 }
