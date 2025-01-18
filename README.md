@@ -62,3 +62,5 @@ GitaPro is a web application designed to help users learn and understand the Bha
 - Tailwind CSS
 - Auth0
 - Xata
+
+Test
