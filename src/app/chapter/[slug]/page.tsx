@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useUser } from "@auth0/nextjs-auth0/client";
 
-import chapters from "../../../app/components/LoggedIn/Profile";
-
 import chapter1 from "../../../../json-database/chapter-1.json";
 import chapter2 from "../../../../json-database/chapter-2.json";
 import chapter3 from "../../../../json-database/chapter-3.json";
@@ -25,6 +23,14 @@ import chapter16 from "../../../../json-database/chapter-16.json";
 import chapter17 from "../../../../json-database/chapter-17.json";
 import chapter18 from "../../../../json-database/chapter-18.json";
 
+interface ChapterData {
+  [key: string]: {
+    transliteration: string;
+    translation: string;
+  };
+}
+
+
 interface Verse {
   transliteration: string;
   translation: string;
@@ -32,7 +38,7 @@ interface Verse {
   isRead: boolean;
 }
 
-const chapterData: Record<string, any> = {
+const chapterData: Record<string, unknown> = {
   "1": chapter1,
   "2": chapter2,
   "3": chapter3,
@@ -49,6 +55,8 @@ const chapterData: Record<string, any> = {
   "14": chapter14,
   "15": chapter15,
   "16": chapter16,
+  "17": chapter17,
+  "18": chapter18,
 };
 
 const chapterInfo: Record<string, string> = {
@@ -68,10 +76,13 @@ const chapterInfo: Record<string, string> = {
   "14": "Gunatraya Vibhaga Yoga",
   "15": "Purushottama Yoga",
   "16": "Daivasura Sampad Vibhaga Yoga",
+  "17": "Śhraddhā Traya Vibhāg Yog",  
+  "18": "The Yoga of the Liberation of Spirit"
+ 
 };
 
 const Chapter = () => {
-  const { user, isLoading, error } = useUser();
+  const { user } = useUser();
   const sub = user?.sub;
 
   const { slug } = useParams();
@@ -85,29 +96,38 @@ const Chapter = () => {
 
   useEffect(() => {
     const fetchVerses = async () => {
-      const data = await chapterData[chapterId];
+      try {
+        const data = chapterData[chapterId];
+        if (!data) {
+          throw new Error(`Chapter ${chapterId} not found`);
+        }
 
-      const formattedVerses = Object.entries(data).map(
-        ([key, value]: [string, any]) => ({
-          verse: parseInt(key),
-          transliteration: value.transliteration,
-          translation: value.translation,
-          isRead: false,
-        })
-      );
-      console.log("SUB", sub);
-      const userResponse = await fetch(`/api/verses?sub=${sub}`);
-      const userData = await userResponse.json();
+        const formattedVerses = Object.entries(data).map(
+          ([key, value]: [string, ChapterData[string]]) => ({
+            verse: parseInt(key),
+            transliteration: value.transliteration,
+            translation: value.translation,
+            isRead: false,
+          })
+        );
 
-      if (userData.versesRead && userData.versesRead[chapterId]) {
-        formattedVerses.forEach((verse) => {
-          verse.isRead = userData.versesRead[chapterId].includes(verse.verse);
-        });
+        if (sub) {
+          const userResponse = await fetch(`/api/verses?sub=${sub}`);
+          const userData = await userResponse.json();
+
+          if (userData.versesRead && userData.versesRead[chapterId]) {
+            formattedVerses.forEach((verse) => {
+              verse.isRead = userData.versesRead[chapterId].includes(verse.verse);
+            });
+          }
+        }
+
+        setVerses(formattedVerses);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching verses:", error);
+        setLoading(false);
       }
-
-      setVerses(formattedVerses);
-      console.log(formattedVerses);
-      setLoading(false);
     };
 
     if (chapterId) {
@@ -128,6 +148,8 @@ const Chapter = () => {
   };
 
   const handleVerseRead = async (verseNumber: number) => {
+    if (!sub) return;
+
     const updatedVerses = verses.map((verse) =>
       verse.verse === verseNumber ? { ...verse, isRead: !verse.isRead } : verse
     );
@@ -137,17 +159,23 @@ const Chapter = () => {
       .filter((v) => v.isRead)
       .map((v) => v.verse);
 
-    const response = await fetch("/api/updateVersesRead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        sub,
-        chapter: parseInt(chapterId),
-        verses: readVerses,
-      }),
-    });
+    try {
+      const response = await fetch("/api/updateVersesRead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sub,
+          chapter: parseInt(chapterId),
+          verses: readVerses,
+        }),
+      });
 
-    console.log("RESPONSE", response);
+      if (!response.ok) {
+        throw new Error("Failed to update read verses");
+      }
+    } catch (error) {
+      console.error("Error updating read verses:", error);
+    }
   };
 
   if (loading) {
@@ -167,8 +195,7 @@ const Chapter = () => {
   }
 
   const currentVerse = verses[currentVerseIndex];
-  const chapterTitle =
-    `Chapter ${chapterId}: ${chapterInfo[chapterId]}` || `Chapter ${chapterId}`;
+  const chapterTitle = `Chapter ${chapterId}: ${chapterInfo[chapterId] || ''}`;
 
   return (
     <div className="min-h-screen flex flex-col px-4 py-8 md:px-8">
