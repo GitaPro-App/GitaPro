@@ -14,7 +14,7 @@ export async function POST(request: Request) {
         const classroom = await xata.db.Classroom.filter({ code }).getFirst();
 
         if (!classroom) {
-        return NextResponse.json({ success: false, message: 'Classroom not found' }, { status: 404 });
+            return NextResponse.json({ success: false, message: 'Classroom not found' }, { status: 404 });
         }
 
         if (classroom.owner?.includes(sub)) {
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
         if (updatedStudents.includes(sub)) {
             return NextResponse.json({ success: false, message: 'Already in class' }, { status: 404 });
         } else {
-        updatedStudents.push(sub);
+            updatedStudents.push(sub);
         }
 
         // 3. Update the record in Xata
