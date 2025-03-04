@@ -31,7 +31,7 @@ jobs:
         env:
           DEST_REPO_URL: github.com/sanjeet-v/gitapro.git
           GIT_USERNAME: sanjeet-v
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GIT_TOKEN: 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
         run: |
           # Configure Git
           git config --global user.name "$GIT_USERNAME"
