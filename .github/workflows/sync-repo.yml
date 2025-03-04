@@ -1,0 +1,43 @@
+name: Sync GitaPro Repository
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out source repository
+      - name: Check out source repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Ensures all history is available
+
+      # Step 2: Check if destination repository exists
+      - name: Check Destination Repository
+        run: |
+          REPO_EXISTS=$(curl -s -o /dev/null -w "%{http_code}" https://github.com/sanjeet-v/gitapro.git)
+          if [[ "$REPO_EXISTS" != "200" ]]; then
+            echo "Destination repository does not exist or is not accessible."
+            echo "Exiting workflow."
+            exit 1
+          fi
+
+      # Step 3: Push to destination repository
+      - name: Mirror push to destination repository
+        env:
+          DEST_REPO_URL: github.com/sanjeet-v/gitapro.git
+          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: |
+          # Configure Git
+          git config --global user.name "$GIT_USERNAME"
+          git config --global user.email "actions@github.com"
+
+          # Add the destination repository as a remote
+          git remote add destination https://${GIT_USERNAME}:${GIT_TOKEN}@${DEST_REPO_URL}
+
+          # Push all branches and tags to the destination repository forcefully
+          git push --mirror destination --force
