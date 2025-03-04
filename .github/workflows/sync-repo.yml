@@ -18,8 +18,10 @@ jobs:
       # Step 2: Check if destination repository exists
       - name: Check Destination Repository
         run: |
-          REPO_EXISTS=$(curl -s -o /dev/null -w "%{http_code}" https://github.com/sanjeet-v/gitapro.git)
+          REPO_URL="https://github.com/sanjeet-v/gitapro" # Correct URL, without .git
+          REPO_EXISTS=$(curl -s -o /dev/null -w "%{http_code}" "$REPO_URL")
           echo "curl response code: $REPO_EXISTS" # Debugging
+
           if [[ "$REPO_EXISTS" != "200" ]]; then
             echo "Destination repository does not exist or is not accessible."
             echo "Exiting workflow."
@@ -31,7 +33,7 @@ jobs:
         env:
           DEST_REPO_URL: github.com/sanjeet-v/gitapro.git
           GIT_USERNAME: sanjeet-v
-          GIT_TOKEN: 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
+          GIT_TOKEN: ${{ secrets.GITAPRO_REPO_TOKEN }} # Use a secret!
         run: |
           # Configure Git
           git config --global user.name "$GIT_USERNAME"
