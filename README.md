@@ -9,7 +9,6 @@ GitaPro is a web application designed to help users learn and understand the Bha
 - **Community Collaboration**: Join study groups and participate in guided discussions.
 - **Verse of the Day**: Get a daily verse from the Bhagavad Gita to reflect upon.
 
-
 ## Getting Started
 
 ### Prerequisites
