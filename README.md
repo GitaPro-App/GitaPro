@@ -62,4 +62,4 @@ GitaPro is a web application designed to help users learn and understand the Bha
 - Auth0
 - Xata
 
-Test
+
