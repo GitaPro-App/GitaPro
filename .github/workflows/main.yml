@@ -18,6 +18,9 @@ jobs:
         run: |
           git remote add personal https://${{ secrets.PAT_TOKEN }}@github.com/sanjeet-v/gitapro.git
 
+      - name: Verify remote
+        run: git remote -v
+
       - name: Push to personal repo
         run: |
           git push -f personal main
