@@ -22,7 +22,7 @@ export default function Footer() {
             <h2 className="text-xl font-semibold">Legal</h2>
             <nav className="flex flex-col space-y-3">
               <Link 
-                href="/terms" className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"> Termsof Service</Link>
+                href="/terms" className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"> Terms of Service</Link>
               <Link 
                 href="/" 
                 className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"
