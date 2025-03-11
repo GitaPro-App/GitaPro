@@ -13,7 +13,7 @@ export default function Footer() {
             <h2 className="text-xl font-semibold ">GitaPro</h2>
             <p className="text-gray-200 text-sm">a DharmicVentures company</p>
             <p className="text-gray-200 text-sm">
-              © 2024 GitaPro. All rights reserved.
+              © 2025 GitaPro. All rights reserved.
             </p>
           </div>
 
@@ -22,13 +22,9 @@ export default function Footer() {
             <h2 className="text-xl font-semibold">Legal</h2>
             <nav className="flex flex-col space-y-3">
               <Link 
-                href="/" 
-                className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"
-              >
-                Terms of Service
-              </Link>
+                href="/terms" className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"> Terms of Service</Link>
               <Link 
-                href="/" 
+                href="/terms" 
                 className="text-gray-200 hover:text-white transition-colors duration-200 text-sm"
               >
                 Privacy Policy
