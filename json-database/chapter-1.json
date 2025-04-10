@@ -1,358 +1,231 @@
 {
-    "1": {
-      "sanskrit": "धृतराष्ट्र उवाच |\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||१-१||",
-      "transliteration": "dhṛtarāṣṭra uvāca .\ndharmakṣetre kurukṣetre samavetā yuyutsavaḥ .\nmāmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||1-1||",
-      "translation": "1.1 Dhritarashtra said  What did my people and the sons of Pandu do when they had assembled\ntogether eager for battle on the holy plain of Kurukshetra, O Sanjaya.",
-      "siva": "1.1 धर्मक्षेत्रे on the holy plain? कुरुक्षेत्रे in Kurukshetra? समवेताः assembled together? युयुत्सवः desirous to fight? मामकाः my people? पाण्डवाः the sons of Pandu? च and? एव also? किम् what? अकुर्वत did do? सञ्जय O Sanjaya.Commentary Dharmakshetra -- that place which protects Dharma is Dharmakshetra. Because it was in the land of the Kurus? it was called Kurukshetra.Sanjaya is one who has conered likes and dislikes and who is impartial."
-    },
-    "2": {
-      "sanskrit": "सञ्जय उवाच |\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |\nआचार्यमुपसंगम्य राजा वचनमब्रवीत् ||१-२||",
-      "transliteration": "sañjaya uvāca .\ndṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā .\nācāryamupasaṃgamya rājā vacanamabravīt ||1-2||",
-      "translation": "1.2. Sanjaya said  Having seen the army of the Pandavas drawn up in battle-array,\nKing Duryodhana then approached his teacher (Drona) and spoke these words.",
-      "siva": "1.2 दृष्ट्वा having seen? तु indeed? पाण्डवानीकम् the army of the Pandavas? व्यूढम् drawn up in battlearray? दुर्योधनः Duryodhana? तदा then? आचार्यम् the teacher? उपसङ्गम्य having approached? राजा the king? वचनम् speech? अब्रवीत् said.No Commentary."
-    },
-    "3": {
-      "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||१-३||",
-      "transliteration": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm .\nvyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā ||1-3||",
-      "translation": "1.3. \"Behold, O Teacher! this mighty army of the sons of Pandu,\narrayed by the son of Drupada, thy wise disciple.",
-      "siva": "1.3 पश्य behold? एताम् this? पाण्डुपुत्राणाम् of the sons of Pandu? आचार्य O Teacher? महतीम् great? चमूम् army? व्यूढाम् arrayed? द्रुपदपुत्रेण son of Drupada? तव शिष्येण by your disciple? धीमता wise.No Commentary."
-    },
-    "4": {
-      "sanskrit": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि |\nयुयुधानो विराटश्च द्रुपदश्च महारथः ||१-४||",
-      "transliteration": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi .\nyuyudhāno virāṭaśca drupadaśca mahārathaḥ ||1-4||",
-      "translation": "1.4. Here are heroes, mighty archers, eal in battle to Bhima\nand Arjuna, Yoyudhana (Satyaki), Virata and Drupada, of the great car (mighty\nwarriors).",
-      "siva": "1.4 अत्र here? शूराः heroes? महेष्वासाः mighty archers? भीमार्जुनसमाः eal to Bhima and Arjuna? युधि in battle? युयुधानः Yuyudhana? विराटः Virata? च and? द्रुपदः Drupada? च and? महारथः of the great car.Commentary Technically? maharatha means a warrior who is proficient in the science of war and who is able to fight alone with ten thousand archers."
-    },
-    "5": {
-      "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् |\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः ||१-५||",
-      "transliteration": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān .\npurujitkuntibhojaśca śaibyaśca narapuṃgavaḥ ||1-5||",
-      "translation": "1.5. \"Dhrishtaketu, chekitana and the valiant king of Kasi, Purujit\nand Kuntibhoja and Saibya, the best men.",
-      "siva": "1.5 धृष्टकेतुः Dhrishtaketu? चेकितानः Chekitana? काशिराजः king of Kasi? च and? वीर्यवान् valiant? पुरुजित् Purujit? कुन्तिभोजः Kuntibhoja? च and? शैब्यः son of Sibi? च and? नरपुङ्गवः the best of men.No Commentary."
-    },
-    "6": {
-      "sanskrit": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् |\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ||१-६||",
-      "transliteration": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān .\nsaubhadro draupadeyāśca sarva eva mahārathāḥ ||1-6||",
-      "translation": "1.6. \"The strong Yodhamanyu and the brave Uttamaujas, the son\nof Subhadra (Abhimanyu, the son of Subhadra and Arjuna), and the sons of\nDraupadi, all of great chariots (great heroes).",
-      "siva": "1.6 युधामन्युः Yudhamanyu? च and? विक्रान्तः the strong? उत्तमौजाः Uttamaujas? च and? वीर्यवान् the brave? सौभद्रः the son of Subhadra? द्रौपदेयाः the sons of Draupadi? च and? सर्वे all? एव even? महारथाः great carwarriors.No Commentary."
-    },
-    "7": {
-      "sanskrit": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम |\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ||१-७||",
-      "transliteration": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama .\nnāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te ||1-7||",
-      "translation": "1.7. \"Know also, O best among the twice-born! the names of those\nwho are the most distinguished amongst ourselves, the leaders of my army;\nthese I name to thee for thy information.",
-      "siva": "1.7 अस्माकम् ours? तु also? विशिष्टाः the best? ये who (those)? तान् those? निबोध know (thou)? द्विजोत्तम (O) best among the twicorn ones? नायकाः the leaders? मम my? सैन्यस्य of the army? संज्ञार्थम् for information? तान् them? ब्रवीमि speak? ते to thee.No Commentary."
-    },
-    "8": {
-      "sanskrit": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः |\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ||१-८||",
-      "transliteration": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ .\naśvatthāmā vikarṇaśca saumadattistathaiva ca ||1-8||",
-      "translation": "1.8. \"Thyself and Bhishma, and Karna and also Kripa, the victorious\nin war, Asvatthama, Vikarna, and also Bhurisrava, the son of Somadatta.",
-      "siva": "1.8 भवान् yourself? भीष्मः Bhishma? च and? कर्णः Karna? च and? कृपः Kripa? च and? समितिञ्जयः victorious in war? अश्वत्थामा Asvatthama? the son of Dronacharya? विकर्णः Vikarna? च and? सौमदत्तिः the son of Somadatta? तथा thus? एव even? च and.No Commentary."
-    },
-    "9": {
-      "sanskrit": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः |\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ||१-९||",
-      "transliteration": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ .\nnānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ ||1-9||",
-      "translation": "1.9. \"And also many other heroes who are ready to give up their\nlives for my sake, armed with various weapons and missiles, all well-skilled\nin battle.",
-      "siva": "1.9 अन्ये others? च and? बहवः many? शूराः heroes? मदर्थे for my sake? त्यक्तजीविताः who are ready to give up their lives? नानाशस्त्रप्रहरणाः armed with various weapons and missiles? सर्वे all? युद्धविशारदाः wellskilled in battle.No Commentary."
-    },
-    "10": {
-      "sanskrit": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् |\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ||१-१०||",
-      "transliteration": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam .\nparyāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam ||1-10||",
-      "translation": "1.10. \"This army of ours marshalled by Bhishma is insufficient,\nwhereas that army of theirs marshelled by Bhima is sufficient.",
-      "siva": "1.10 अपर्याप्तम् insufficient? तत् that? अस्माकम् ours? बलम् army? भीष्माभिरक्षितम् marshalled by Bhishma? पर्याप्तम् sufficient? तु while? इदम् this? एतेषाम् their? बलम् army? भीमाभिरक्षितम् marshalled by Bhima.Commentary The verse is differently interpreted by different commentators. Sridhara Swami takes the word aparyaptam to mean insufficient. Ananda Giri takes it to mean unlimited."
-    },
-    "11": {
-      "sanskrit": "अयनेषु च सर्वेषु यथाभागमवस्थिताः |\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ||१-११||",
-      "transliteration": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ .\nbhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi ||1-11||",
-      "translation": "1.11. \"Therefore do ye all, stationed in your respective positions,\nin the several divisions of the army, protect Bhishma alone.\"",
-      "siva": "1.11 अयनेषु in the arrays (of the army)? च and? सर्वेषु in all? यथाभागम् according to division? अवस्थिताः being stationed? भीष्मम् Bhishma? एव alone? अभिरक्षन्तु protect? भवन्तः ye? सर्वे all? एव even? हि indeed.No Commentary."
-    },
-    "12": {
-      "sanskrit": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः |\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ||१-१२||",
-      "transliteration": "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ .\nsiṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān ||1-12||",
-      "translation": "1.12. His glorious grandsire (Bhishma), the oldest of the Kauravas,\nin order to cheer Duryodhana, now roared like a lion, and blew his conch.",
-      "siva": "1.12 तस्य his (Duryodhanas)? संजयन् causing? हर्षम् joy? कुरुवृद्धः oldest of the Kurus? पितामहः grandfather? सिंहनादम् lions roar? विनद्य having sounded? उच्चैः loudly? शङ्खम् conch? दध्मौ blew? प्रतापवान् the glorious.No Commentary."
-    },
-    "13": {
-      "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः |\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ||१-१३||",
-      "transliteration": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ .\nsahasaivābhyahanyanta sa śabdastumulo.abhavat ||1-13||",
-      "translation": "1.13. Then (following Bhishma), conches and kettledrums, tabors,\ndrums and cow horns blared forth ite suddenly (from the Kaurava side)\nand the sound was tremendous.",
-      "siva": "1.13 ततः then शङ्खाः conches? च and? भेर्यः kettledrums? च and? पणवानकगोमुखाः tabors? drums and cowhorns? सहसा एव ite suddenly? अभ्यहन्यन्त blared forth? सः that? शब्दः sound? तुमुलः tremendous? अभवत् was.No Commentary."
-    },
-    "14": {
-      "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ |\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ||१-१४||",
-      "transliteration": "tataḥ śvetairhayairyukte mahati syandane sthitau .\nmādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ ||1-14||",
-      "translation": "1.14. Then, also, Madhava (Krishna) and the son of Pandu (Arjuna),\nseated in the magnificent chariot, yoked with white horses, blew divine\nconches.",
-      "siva": "1.14 ततः then? श्वेतैः (with) white? हयैः horses? युक्ते yoked? महति magnificent? स्यन्दने in the chariot? स्थितौ seated? माधवः Madhava? पाण्डवः Pandava? the son of Pandu? च and? एव also? दिव्यौ divine? शङ्खौ conches? प्रदध्मतुः blew.No Commentary."
-    },
-    "15": {
-      "sanskrit": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः |\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ||१-१५||",
-      "transliteration": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ .\npauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ ||1-15||",
-      "translation": "1.15. Hrishikesha blew the Panchajanya and Arjuna blew the Devadatta\nand Bhima (the wolf-bellied), the doer of terrible deeds, blew the great\nconch Paundra.",
-      "siva": "1.15 पाञ्चजन्यम् (the conch named) Panchajanya? हृषीकेशः (the Lord of the senses) Krishna? देवदत्तम् (the conch named) Devadatta? धनञ्जयः (the victor of wealth) Arjuna? पौण्ड्रम् (the conch named) Poundra? दध्मौ blew? महाशङ्खम् great conch? भीमकर्मा doer of terrible dees? वृकोदरः (having the belly of a wolf) Bhima.No Commentary."
-    },
-    "16": {
-      "sanskrit": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः |\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ||१-१६||",
-      "transliteration": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ .\nnakulaḥ sahadevaśca sughoṣamaṇipuṣpakau ||1-16||",
-      "translation": "1.16. The king Yodhishthira, the son of Kunti, blew the Anantavijaya;\nNakula and Sahadeva blew the Sughosha and the Manipushpaka.",
-      "siva": "1.16 अनन्तविजयम् (the conch named) Anantavijayam? राजा the king? कुन्तीपुत्रः son of Kunti? युधिष्ठिरः Yudhishthira? नकुलः Nakula? सहदेवः Sahadeva? च and? सुघोषमणिपुष्पकौ (the conches named) Sughosha and Manipushpaka.No Commentary."
-    },
-    "17": {
-      "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी च महारथः |\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ||१-१७||",
-      "transliteration": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ .\ndhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ ||1-17||",
-      "translation": "1.17. The king of Kasi, an exellent archer, Sikhandi, the mighty\ncar-warrior, Dhrishtadyumna and Virata and Satyaki, the unconered.",
-      "siva": "1.17 काश्यः Kasya? the king of Kasi? च and? परमेष्वासः an excellent archer? शिखण्डी Sikhandi? च and? महारथः mighty carwarrior? धृष्टद्युम्नः Dhrishtadyumna? विराटः Virata? च  and? सात्यकिः Satyaki? च and? अपराजितः unconered.No Commentary."
-    },
-    "18": {
-      "sanskrit": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते |\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ||१-१८||",
-      "transliteration": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate .\nsaubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak ||1-18||",
-      "translation": "1.18. Drupada and the sons of Draupadi, O Lord of the earth, and\nthe son of Subhadra, the mighty-armed, blew their conches separately.",
-      "siva": "1.18 द्रुपदः Drupada? द्रौपदेयाः the sons of Draupadi? च and? सर्वशः all? पृथिवीपते O Lord of the earth? सौभद्रः the son of Subhadra (Abhimanyu)? च and महाबाहुः the mightyarmed? शङ्खान् conches? दध्मुः blew? पृथक् पृथक् separately.Commentary This blowing of conches announced the commencement of the battle."
-    },
-    "19": {
-      "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् |\nनभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् (or लोव्यनु) ||१-१९||",
-      "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat .\nnabhaśca pṛthivīṃ caiva tumulo.abhyanunādayan (lo vyanu)||1-19||",
-      "translation": "1.19. That tumultuous sound rent the hearts of (the members of)\nDhritarashtra's party, making both the heaven and the earth resound.",
-      "siva": "1.19 सः that? घोषः uproar? धार्तराष्ट्राणाम् of Dhritarashtras party? हृदयानि hearts? व्यदारयत् rent? नभः sky? च and? पृथिवीम् earth? च and? एव also? तुमुलः tumultuous? व्यनुनादयन् resounding.No Commentary."
-    },
-    "20": {
-      "sanskrit": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः |\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः |\nहृषीकेशं तदा वाक्यमिदमाह महीपते ||१-२०||",
-      "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ .\npravṛtte śastrasampāte dhanurudyamya pāṇḍavaḥ ||1-20||",
-      "translation": "1.20. Then, seeing the people of Dhritarashtra’s party standing\narrayed and the discharge of weapons about to begin, Arjuna, the son of\nPandu, whose ensign was a monkey, took up his bow and said the following\nto Krishna, O Lord of the earth.",
-      "siva": "1.20 अथ now? व्यवस्थितान् standing arrayed? दृष्ट्वा seeing? धार्तराष्ट्रान् Dhritarashtras party? कपिध्वजः monkeyensigned? प्रवृत्ते about to begin? शस्त्रसंपाते discharge of weapons? धनुः bow? उद्यम्य having taken up? पाण्डवः the son of Pandu? हृषीकेशम् to Hrishikesha? तदा then? वाक्यम् word? इदम् this? आह said? महीपते O Lord of the earth.No Commentary."
-    },
-    "21": {
-      "sanskrit": "अर्जुन उवाच |\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ||१-२१||",
-      "transliteration": "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate .\narjuna uvāca .\nsenayorubhayormadhye rathaṃ sthāpaya me.acyuta ||1-21||",
-      "translation": "1.21 Arjuna said  In the middle between the two armies, place my chariot,\nO krishna, so that I may behold those who stand here desirous to fight,\nand know with whom I must fight, when the battle is about to commence.",
-      "siva": "1.21 -- 1.22 सेनयोः of the armies? उभयोः of both? मध्ये in the middle? रथम् car? स्थापय place? मे my? अच्युत O Achyuta (O changeless? Krishna)? यावत् while? एतान् these? निरीक्षे behold? अहम् I? योद्धुकामान् desirous to fight? अवस्थितान् standing? कैः with whom? मया by me? सह together? योद्धव्यम् must be fought? अस्मिन् in this? रणसमुद्यमे eve of battle.No Commentary."
-    },
-    "22": {
-      "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् |\nकैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे ||१-२२||",
-      "transliteration": "yāvadetānnirikṣe.ahaṃ yoddhukāmānavasthitān .\nkairmayā saha yoddhavyamasmin raṇasamudyame ||1-22||",
-      "translation": "1.22. Arjuna said  In the middle between the two armies, place my chariot,\nO krishna, so that I may behold those who stand here desirous to fight,\nand know with whom I must fight, when the battle is about to commence.",
-      "siva": "1.21 -- 1.22 सेनयोः of the armies? उभयोः of both? मध्ये in the middle? रथम् car? स्थापय place? मे my? अच्युत O Achyuta (O changeless? Krishna)? यावत् while? एतान् these? निरीक्षे behold? अहम् I? योद्धुकामान् desirous to fight? अवस्थितान् standing? कैः with whom? मया by me? सह together? योद्धव्यम् must be fought? अस्मिन् in this? रणसमुद्यमे eve of battle.No Commentary."
-    },
-    "23": {
-      "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः |\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ||१-२३||",
-      "transliteration": "yotsyamānānavekṣe.ahaṃ ya ete.atra samāgatāḥ .\ndhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ ||1-23||",
-      "translation": "1.23. For I desire to observe those who are assembled here to fight,\nwishing to please in battle the evil-minded Duryodhana (the son of Dhritarashtra).",
-      "siva": "1.23 योत्स्यमानान् with the object of fighting? अवेक्षे observe? अहम् I? ये who? एते those? अत्र here (in this Kurukshetra)? समागताः assembled? धार्तराष्ट्रस्य of the son of Dhritarashtra? दुर्बुद्धेः of the evilminded? युद्धे in battle? प्रियचिकीर्षवः wishing to please.No Commentary."
-    },
-    "24": {
-      "sanskrit": "सञ्जय उवाच |\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत |\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ||१-२४||",
-      "transliteration": "sañjaya uvāca .\nevamukto hṛṣīkeśo guḍākeśena bhārata .\nsenayorubhayormadhye sthāpayitvā rathottamam ||1-24||",
-      "translation": "1.24. Sanjaya said  Thus addressed by Arjuna, Krishna, having stationed that\nbest of chariots, O Dhritarashtra, in the midst of the two armies.",
-      "siva": "1.24 एवम् thus? उक्तः addressed? हृषीकेशः Hrishikesha? गुडाकेशेन by Gudakesha (the coneror of sleep? Arjuna)? भारत O Bharata (descendant of king Bharata? Dhritarashtra)? सेनयोः of the armies? उभयोः of both? मध्ये in the middle? स्थापयित्वा having stationed? रथोत्तमम् best of chariots.No Commentary."
-    },
-    "25": {
-      "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् |\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ||१-२५||",
-      "transliteration": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām .\nuvāca pārtha paśyaitānsamavetānkurūniti ||1-25||",
-      "translation": "1.25. In front of Bhishma and Drona, and all the rulers of the\nearth, said: \"O Arjuna (son of Pritha), behold these Kurus gathered together.\"",
-      "siva": "1.25 भीष्मद्रोणप्रमुखतः in front of Bhishma and Drona? सर्वेषाम् of all? च and? महीक्षिताम् rulers of the earth? उवाच said? पार्थ O Partha? पश्य behold? एतान् these? समवेतान् gathered? कुरून् Kurus? इति thus.No Commentary."
-    },
-    "26": {
-      "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् |\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा ||१-२६||",
-      "transliteration": "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān .\nācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā ||1-26||",
-      "translation": "1.26. Then, Arjuna (son of Pritha) saw there (in the armies) stationed,\nfathers and grandfathers, teachers, maternal uncles, brothers, sons, grandsons\nand friends too.",
-      "siva": "1.26 तत्र there? अपश्यत् saw? स्थितान् stationed? पार्थः Partha? पितृ़न् fathers? अथ also? पितामहान्grandfathers? आचार्यान् teachers? मातुलान् maternal uncles? भ्रातृ़न् brothers? पुत्रान् sons? पौत्रान् grandsons? सखीन् friends? तथा too.No Commentary."
-    },
-    "27": {
-      "sanskrit": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि |\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान् ||१-२७||",
-      "transliteration": "śvaśurānsuhṛdaścaiva senayorubhayorapi .\ntānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān ||1-27||",
-      "translation": "1.27. (He saw) fathers-in-law and friends also in both the armies.\nThe son of Kunti, Arjuna, seeing all those kinsmen thus standing arrayed,\nspoke this, sorrowfully filled with deep pity.",
-      "siva": "1.27 श्वशुरान् fathersinlaw? सुहृदः friends? च and? एव also? सेनयोः in armies? उभयोः (in) both? अपि also? तान् those? समीक्ष्य having seen? सः he? कौन्तेयः Kaunteya? सर्वान् all? बन्धून् relatives? अवस्थितान् standing (arrayed)? कृपया by pity? परया deep? आविष्टः filled? विषीदन् sorrowfully? इदम् this? अब्रवीत् said.No Commentary.",
-      "questions": [
-        {
-          "question": "According to Ramanuja, why is Dhritarashtra’s question to Sanjaya significant?",
-          "options": [
-            "a) It reveals his detachment from the battle's moral implications",
-            "b) It shows his concern for both sides equally",
-            "c) It highlights his awareness that Kurukshetra is a place of dharma and may influence his sons",
-            "d) It demonstrates his belief that victory is already assured"
-          ],
-          "correctAnswer": "c"
-        },
-        {
-          "question": "How does Ramanuja interpret the term 'Dharma-Kshetra' in a philosophical sense?",
-          "options": [
-            "a) As a neutral battlefield where both sides have equal dharmic standing",
-            "b) As a place where divine justice manifests, favoring the righteous",
-            "c) As merely a geographical reference with no deeper meaning",
-            "d) As an illusion created by Krishna to test Arjuna"
-          ],
-          "correctAnswer": "b"
-        },
-        {
-          "question": "What is the significance of Duryodhana's words to Drona, according to Ramanuja?",
-          "options": [
-            "a) They show his attempt to instill confidence while concealing his own fear",
-            "b) They indicate his unwavering faith in his army's strength",
-            "c) They highlight his deep respect for Bhishma’s leadership",
-            "d) They reveal his willingness to negotiate peace"
-          ],
-          "correctAnswer": "a"
-        },
-        {
-          "question": "Why does Ramanuja emphasize Bhishma’s role in the battle’s early moments?",
-          "options": [
-            "a) To demonstrate Bhishma’s impartiality toward both sides",
-            "b) To show how even great warriors are bound by worldly attachments",
-            "c) To highlight the strength of the Kauravas' army",
-            "d) To illustrate the inevitability of divine will over human effort"
-          ],
-          "correctAnswer": "b"
-        },
-        {
-          "question": "According to Ramanuja, what does the blowing of conches by the Pandavas signify?",
-          "options": [
-            "a) A mere signal for battle",
-            "b) The invocation of divine forces in their favor",
-            "c) An act of intimidation toward the Kauravas",
-            "d) A tribute to their ancestors"
-          ],
-          "correctAnswer": "b"
-        },
-        {
-          "question": "Ramanuja suggests that Dhritarashtra’s blindness is symbolic of his inability to perceive true dharma.",
-          "options": ["True", "False"],
-          "correctAnswer": true
-        },
-        {
-          "question": "The Bhagavad Gita, as interpreted by Ramanuja, portrays the Pandavas' actions as solely motivated by personal revenge.",
-          "options": ["True", "False"],
-          "correctAnswer": false
-        },
-        {
-          "question": "Ramanuja sees Kurukshetra as a metaphor for the inner battlefield of the soul.",
-          "options": ["True", "False"],
-          "correctAnswer": true
-        }
-      ]
-    },
-    "28": {
-      "sanskrit": "कृपया परयाविष्टो विषीदन्निदमब्रवीत् |\nअर्जुन उवाच |\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ||१-२८||",
-      "transliteration": "kṛpayā parayāviṣṭo viṣīdannidamabravīt .\narjuna uvāca .\ndṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam ||1-28||",
-      "translation": "1.28. Arjuna said  Seeing these, my kinsmen, O krishna, arrayed, eager to fight.",
-      "siva": "1.28 दृष्ट्वा having seen? इमम् these? स्वजनम् kinsmen? कृष्ण O Krishna (the dark one? He who attracts)? युयुत्सुम् eager to fight? समुपस्थितम् arrayed.No Commentary."
-    },
-    "29": {
-      "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति |\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते ||१-२९||",
-      "transliteration": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati .\nvepathuśca śarīre me romaharṣaśca jāyate ||1-29||",
-      "translation": "1.29. My limbs fail and my mouth is parched, my body ivers and\nmy hair stands on end.",
-      "siva": "1.29 सीदन्ति fail? मम my? गात्राणि limbs? मुखम् mouth? च and? परिशुष्यति is parching? वेपथुः shivering? च and? शरीरे in body? मे my? रोमहर्षः horripilation? च and? जायते arises.No Commentary."
-    },
-    "30": {
-      "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते |\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ||१-३०||",
-      "transliteration": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate .\nna ca śaknomyavasthātuṃ bhramatīva ca me manaḥ ||1-30||",
-      "translation": "1.30. The (bow) Gandiva slips from my hand, and also my skins burns\nall over; I am unable even to stand and my mind is reeling, as it were.",
-      "siva": "1.30 गाण्डीवम् Gandiva? स्रंसते slips? हस्तात् from (my) hand? त्वक् (my) skin? च and? एव also? परिदह्यते burns all over? न not? च and? शक्नोमि (I) am able? अवस्थातुम्? to stand? भ्रमति इव seems whirling? च and? मे my? मनः mind.No Commentary."
-    },
-    "31": {
-      "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव |\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ||१-३१||",
-      "transliteration": "nimittāni ca paśyāmi viparītāni keśava .\nna ca śreyo.anupaśyāmi hatvā svajanamāhave ||1-31||",
-      "translation": "1.31. And I see adverse omens, O Kesava. I do not see any good\nin killing my kinsmen in battle.",
-      "siva": "1.31 निमित्तानि omens? च and? पश्यामि I see? विपरीतानि adverse? केशव O Kesava? न not? च and? श्रेयः good? अनुपश्यामि (I) see? हत्वा killing? स्वजनम् our peope? आहवे in battle.Commentary Kesava means he who has fine or luxuriant hair."
-    },
-    "32": {
-      "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च |\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ||१-३२||",
-      "transliteration": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca .\nkiṃ no rājyena govinda kiṃ bhogairjīvitena vā ||1-32||",
-      "translation": "1.32. I desire not victory, O Krishna, nor kingdom, nor pleasures.\nOf what avail is dominion to us, O Krishna, or pleasures or even life?",
-      "siva": "1.32 न not? काङ्क्षे (I) desire? विजयम् victory? कृष्ण O Krishna? न not? च and? राज्यम् kingdom? सुखानि pleasures? च and? किम् what? नः to us? राज्येन by kindom? गोविन्द O Govinda? किम् what? भोगैः by pleasures? जीवितेन life? वा or.No Commentary."
-    },
-    "33": {
-      "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च |\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ||१-३३||",
-      "transliteration": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca .\nta ime.avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca ||1-33||",
-      "translation": "1.33. Those for whose sake we desire kingdom, enjoyments and pleasures,\nstand here in battle, having renounced life and wealth.",
-      "siva": "1.33 येषाम् of whose? अर्थे sake? काङ्क्षितम् (is) desired? नः by us? राज्यम् kingdom? भोगाः enjoyment? सुखानि pleasures? च and? ते they? इमे these? अवस्थिताः stand? युद्धे in battle? प्राणान् life? त्यक्त्वा having abandoned? धनानि wealth? च and.No Commentary."
-    },
-    "34": {
-      "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः |\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ||१-३४||",
-      "transliteration": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ .\nmātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā ||1-34||",
-      "translation": "1.34. Teachers, fathers, sons and also grandfathers, maternal uncles,\nfathers-in-law, grandsons, brothers-in-law and other relatives,-",
-      "siva": "1.34 आचार्याः teachers? पितरः fathers? पुत्राः sons? तथा thus? एव also? च and? पितामहाः grandfathers? मातुलाः maternal uncles? श्वशुराः fathersinlaw? पौत्राः grandsons? श्यालाः brothersinlaw? सम्बन्धिनः relatives? तथा as well as.No Commentary."
-    },
-    "35": {
-      "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन |\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ||१-३५||",
-      "transliteration": "etānna hantumicchāmi ghnato.api madhusūdana .\napi trailokyarājyasya hetoḥ kiṃ nu mahīkṛte ||1-35||",
-      "translation": "1.35. These I do not wish to kill, though they kill me, O Krishna,\neven for the sake of dominion over the three worlds; leave alone killing\nthem for the sake of the earth.",
-      "siva": "1.35 एतान् these? न not? हन्तुम् to kill? इच्छामि (I) wish? घ्नतःअपि even if they kill me? मधुसूदन O Madhusudana (the slayer of Madhu? a demon)? अपि even? त्रैलोक्यराज्यस्य dominion over the three worlds? हेतोः for the sake of? किम् how? नु then? महीकृते for the sake of the earth.No Commentary."
-    },
-    "36": {
-      "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन |\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ||१-३६||",
-      "transliteration": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana .\npāpamevāśrayedasmānhatvaitānātatāyinaḥ ||1-36||",
-      "translation": "1.36. By killing these sons of Dhritarashtra, what pleasure can\nbe ours, O Janardana? Only sin will accrue to us from killing these felons.",
-      "siva": "1.36 निहत्य having slain? धार्तराष्ट्रान् sons of Dhritarashtra? नः to us? का what? प्रीतिः pleasure? स्यात् may be? जनार्दन O Janardana? पापम् sin? एव only? आश्रयेत् would take hold? अस्मान् to us? हत्वा having killed? एतान् these? आततायिनः felons.Commentary Janardana means one who is worshipped by all for prosperity and salvation -- Krishna.He who sets fire to the house of another? who gives poision? who runs with sword to kill? who has plundered wealth and lands? and who has taken hold of the wife of somody else is an atatayi. Duryodhana had done all these evil actions."
-    },
-    "37": {
-      "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् |\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव ||१-३७||",
-      "transliteration": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān .\nsvajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava ||1-37||",
-      "translation": "1.37. Therefore, we should not kill the sons of Dhritarashtra,\nour relatives; for how can we be happy by killing our own people, O Madhava\n(Krishna)?",
-      "siva": "1.37 तस्मात् therefore? न (are) not? अर्हाः justified? वयम् we? हन्तुम् to kill? धार्तराष्ट्रान् the sons of Dhritarashtra? स्वबान्धवान् our relatives? स्वजनम् kinsmen? हि indeed? कथम् how? हत्वा having killed? सुखिनः happy? स्याम may (we) be? माधव O Madhava.No Commentary."
-    },
-    "38": {
-      "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः |\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ||१-३८||",
-      "transliteration": "yadyapyete na paśyanti lobhopahatacetasaḥ .\nkulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam ||1-38||",
-      "translation": "1.38. Though they, with intelligence overpowered by greed, see\nno evil in the destruction of families, and no sin in hostility to friends,",
-      "siva": "1.38 यद्यपि though? एते these? न not? पश्यन्ति see? लोभोपहतचेतसः with intelligence overpowered by greed? कुलक्षयकृतम् in the destruction of families? दोषम् evil? मित्रद्रोहे in hostility to friends? च and? पातकम् sin.No Commentary."
-    },
-    "39": {
-      "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् |\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ||१-३९||",
-      "transliteration": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum .\nkulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana ||1-39||",
-      "translation": "1.39. Why should not we who clearly see evil in the destruction\nof families, learn to turn away from this sin, O Janardana (Krishna)?",
-      "siva": "1.39 कथम् why? न not? ज्ञेयम् should be learnt? अस्माभिः by us? पापात् from sin? अस्मात् this? निवर्तितुम् to turn away? कुलक्षयकृतम् in the destruction of families? दोषम् evil? प्रपश्यद्भिः clearly seeing? जनार्दन O Janardana.Commentary Ignorance of law is no excuse but wanton sinful conduct is a grave crime? unworthy of us? who are wiser."
-    },
-    "40": {
-      "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः |\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ||१-४०||",
-      "transliteration": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ .\ndharme naṣṭe kulaṃ kṛtsnamadharmo.abhibhavatyuta ||1-40||",
-      "translation": "1.40. In the destruction of a family, the immemorial religious\nrites of that family perish; on the destruction of spirituality, impiety,\nindeed, overcomes the whole family.",
-      "siva": "1.40 कुलक्षये in the destruction of a family? प्रणश्यन्ति perish? कुलधर्माः family religious rites? सनातनाः immemorial? धर्मे spirituality? नष्टे being destroyed? कुलम् कृत्स्नम् the whole family? अधर्मः impiety? अभिभवति overcomes? उत indeed.Commentary Dharma -- the duties and ceremonies practised by the family in accordance with the injunctions of the scriptures."
-    },
-    "41": {
-      "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः |\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ||१-४१||",
-      "transliteration": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ .\nstrīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ ||1-41||",
-      "translation": "1.41. By the prevalence of impiety, O Krishna, the women of\nthe family become corrupt; and , women being corrupted, O Varshenya (descendant\nof Vrishni), there arises intermingling of castes.",
-      "siva": "1.41 अधर्माभिभवात् from the prevalence of impiety? कृष्ण O Krishna? प्रदुष्यन्ति become corrupt? कुलस्त्रियः the women of the family? स्त्रीषु in women? दुष्टासु (being) corrupt? वार्ष्णेय O Varshneya? जायते arises? वर्णसङ्करः casteadmixture.No Commentary."
-    },
-    "42": {
-      "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च |\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ||१-४२||",
-      "transliteration": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca .\npatanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ ||1-42||",
-      "translation": "1.42. Confusion of castes leads to hell the slayers of the family,\nfor their forefathers fall, deprived of the offerings of rice-ball and\nwater (libations).",
-      "siva": "1.42 सङ्करः confusion of castes? नरकाय for the hell? एव also? कुलघ्नानाम् of the slayers of the family?कुलस्य of the family? च and? पतन्ति fall? पितरः the forefathers? हि verily? एषां their? लुप्तपिण्डोदकक्रियाः deprived of the offerings of ricall and water.No Commentary."
-    },
-    "43": {
-      "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः |\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ||१-४३||",
-      "transliteration": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ .\nutsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ ||1-43||",
-      "translation": "1.43. By these evil deeds of the destroyers of the family, which\ncause confusion of castes, the eternal religious rites of the caste and\nthe family are destroyed.",
-      "siva": "1.43 दोषैः by evil deeds? एतैः (by) these? कुलघ्नानाम् of the family destroyers? वर्णसङ्करकारकैः causing intermingling of castes? उत्साद्यन्ते are destroyed? जातिधर्माः religious rites of the caste? कुलधर्माः family religious rites? च and? शाश्वताः eternal.No Commentary."
-    },
-    "44": {
-      "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन |\nनरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं) ||१-४४||",
-      "transliteration": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana .\nnarake niyataṃ vāso bhavatītyanuśuśruma ||1-44||",
-      "translation": "1.44. We have heard, O Janardana, that inevitable is the dwelling\nfor an unknown period in hell for those men in whose families the religious\npractices have been destroyed.",
-      "siva": "1.44 उत्सन्नकुलधर्माणाम् whose family religious practices are destroyed? मनुष्याणाम् of the men? जनार्दन O Janardana? नरके in hell? अनियतं for unknown period? वासः dwelling? भवति is? इति thus? अनुशुश्रुम we have heard.No Commentary."
-    },
-    "45": {
-      "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम् |\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ||१-४५||",
-      "transliteration": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam .\nyadrājyasukhalobhena hantuṃ svajanamudyatāḥ ||1-45||",
-      "translation": "1.45. Alas! We are involved in a great sin, in that we are\nprepared to kill our kinsmen, through greed for the pleasures of a kingdom.",
-      "siva": "1.45 अहो बत alas? महत् great? पापम् sin? कर्तुम् to do? व्यवसिताः prepared? वयम् we? यत् that? राज्यसुखलोभेन by the greed of pleasure of kingdom? हन्तुम् to kill? स्वजनम् kinsmen? उद्यताः prepared.No Commentary."
-    },
-    "46": {
-      "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः |\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ||१-४६||",
-      "transliteration": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ .\ndhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet ||1-46||",
-      "translation": "1.46. If the sons of Dhritarashtra with weapons in hand should\nslay me in battle, unresisting and unarmed, that would be better for me.",
-      "siva": "1.46 यदि if? माम् me? अप्रतीकारम् unresisting? अशस्त्रम् unarmed? शस्त्रपाणयः with weapons in hand? धार्तराष्ट्राः the sons of Dhritarashtra? रणे in the battle हन्युः should slay? तत् that? मे of me? क्षेमतरम् better? भवेत् would be.No Commentary."
-    },
-    "47": {
-      "sanskrit": "सञ्जय उवाच |\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् |\nविसृज्य सशरं चापं शोकसंविग्नमानसः ||१-४७||",
-      "transliteration": "sañjaya uvāca .\nevamuktvārjunaḥ saṅkhye rathopastha upāviśat .\nvisṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ ||1-47||",
-      "translation": "1.47. Sanjaya said  Having thus spoken in the midst of the battlefield, Arjuna,\ncasting away his bow and arrow, sat down on the seat of the chariot with\nhis mind overwhelmed with sorrow.",
-      "siva": "1.47 एवम् thus? उक्त्वा having said? अर्जुनः Arjuna? संख्ये in the battle? रथोपस्थे on the seat of the chariot? उपाविशत् sat down? विसृज्य having cast away? सशरम् with arrow? चापम् bow? शोकसंविग्नमानसः with a mind distressed with sorrow.Thus in the Upanishads of the glorious Bhagavad Gita? the science of the Eternal? the scripture of Yoga? the dialogue between Sri Krishna and Arjuna? ends the first discourse entitledThe Yoga of the Despondency of Arjuna."
-    },
-    "48": {
-      "sanskrit": "ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु\nब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे\nअर्जुनविषादयोगो नाम प्रथमोऽध्यायः ||१||",
-      "transliteration": "OM tatsaditi śrīmadbhagavadgītāsūpaniṣatsu brahmavidyāyāṃ yogaśāstre śrīkṛṣṇārjunasaṃvāde arjunaviṣādayogo nāma prathamo.adhyāyaḥ ||1-48||",
-      "translation": "Swami Sivananda did not comment on this sloka",
-      "siva": "Swami Sivananda did not comment on this sloka"
-    }
-  
+  "1": {
+    "transliteration": "dhrtarastra uvaca\ndharma-ksetre kuru-ksetre samaveta yuyutsavah\nmamakah pandavas caiva kim akurvata sanjaya",
+    "translation": "Dhrtarastra said:\nO Sanjaya, what did the sons of Pandu and mine do when they gathered on\nthe sacred plain of Kuruksetra, eager for battle?",
+    "Ramanuja commentary" : "none"
+  },
+  "2": {
+    "transliteration": "sanjaya uvaca\ndrstva tu pandavanikam vyudham duryodhanas tada\nacaryam upasangamya raja vacanam abravit",
+    "translation": "Sanjaya said: Having seen the army of the Pandavas ranged for battle,\nPrince Duryodhana went up to his acarya (teacher), Drona, and said:",
+    "Ramanuja commentary" : "none"
+  },
+  "3": {
+    "transliteration": "pasyaitam pandu-putranam acarya mahatim camum\nvyudham drupada-putrena tava sisyena dhimata",
+    "translation": "Look, O Teacher, at this mighty army of the sons of Pandu, which has been\npositioned by your talented pupil, the son of Drupada.",
+    "Ramanuja commentary" : "none"
+  },
+  "4": {
+    "transliteration": "atra sura mahesv-asa bhimarjuna-sama yudhi\nyuyudhano viratas ca drupadas ca maha-rathah",
+    "translation": "There are in it heroes, mighty archers, equal in battle to Bhima and\nArjuna: Yuyudhana, Virata, and the great warrior (mahdratha) Drupada,",
+    "Ramanuja commentary" : "none"
+  },
+  "5": {
+    "transliteration": "dhrstaketus cekitanah kasirajas ca viryavan\npurujit kuntibhojas ca saibyas ca nara-pungavah",
+    "translation": "Dhrishtaketu, Cekitana, and the valiant king of Kasi, Purujit, Kuntibhoja,\nand the prominent man Saibya,",
+    "Ramanuja commentary" : "none"
+  },
+  "6": {
+    "transliteration": "yudhamanyus ca vikranta uttamaujas ca viryavan\nsaubhadro draupadeyas ca sarva eva maha-rathah",
+    "translation": "The heroic Yudhamanyu, and the valiant Uttamauja; the son of Subhadra\nand the son of Draupadi, all proficient charioteers.",
+    "Ramanuja commentary" : "none"
+  },
+  "7": {
+    "transliteration": "asmakam tu visista ye tan nibodha dvijottama\nnayaka mama sainyasya samjnartham tan bravimi te",
+    "translation": "I now mention, O best of the twice-born, who are the most distinguished\namong us, the commanders of my army, naming to you by way of example.",
+    "Ramanuja commentary" : "none"
+  },
+  "8": {
+    "transliteration": "bhavan bhismas ca karnas ca krpas ca samitim-jayah\nasvatthama vikarnas ca saumadattis tathaiva ca",
+    "translation": "Yourself and Bhisma, Kama, the victorious Krpa, Asvatthama and\nVikarna, also Jayadratta, the son of Somadatta;",
+    "Ramanuja commentary" : "none"
+  },
+  "9": {
+    "transliteration": "anye ca bahavah sura mad-arthe tyakta-jivitah\nnana-sastra-praharanah sarve yuddha-visaradah",
+    "translation": "And, many other heroes giving up their lives for me, fighting with various\nweapons, and all well skilled in the art of warfare.",
+    "Ramanuja commentary" : "none"
+  },
+  "10": {
+    "transliteration": "aparyaptam tad asmakam balam bhismabhiraksitam\nparyaptam tv idam etesam balam bhimabhiraksitam",
+    "translation": "This army of ours, commanded by Bhisma is unbeatable, whereas that\narmy of theirs which is under the protection of Bhima is inadequate.",
+    "Ramanuja commentary" : "none"
+  },
+  "11": {
+    "transliteration": "ayanesu ca sarvesu yatha-bhagam avasthitah\nbhismam evabhiraksantu bhavantah sarva eva hi",
+    "translation": "Therefore, now, do all of you, occupying your respective positions in the\nvarious divisions of the army, defend Bhisma only.",
+    "Ramanuja commentary" : "none"
+  },
+  "12": {
+    "transliteration": "tasya sanjanayan harsam kuru-vrddhah pitamahah\nsimha-nadam vinadyoccaih sankham dadhmau pratapavan",
+    "translation": "The powerful grandsire Bhisma, the eldest of the Kuru reign, in order to\ncheer him (Duryodhana), roared as a lion and blew his conch.",
+    "Ramanuja commentary" : "none"
+  },
+  "13": {
+    "transliteration": "tatah sankhas ca bheryas ca panavanaka-gomukhah\nsahasaivabhyahanyanta sa sabdas tumulo 'bhavat",
+    "translation": "At this, and all at once, conches, kettledrums, cymbals, drums and horns\nwere heard, and the sound of that was uncontrolled.",
+    "Ramanuja commentary" : "none"
+  },
+  "14": {
+    "transliteration": "tatah svetair hay air yukta mahati syandane sthitau\nmadhavah pandavas caiva divyau sankhau pradadhmatuh",
+    "translation": "Then, Madhava (Krsna) and the son of Pandu (Arjuna), who were seated in\ntheir grand chariot yoked to white horses, blew their divine conches.",
+    "Ramanuja commentary" : "none"
+  },
+  "15": {
+    "transliteration": "pancajanyam hrsikeso devadattam dhananjayah\npaundram dadhmau maha-sankham bhima-karma vrkodarah",
+    "translation": "Hrsikesa (Krsna) blew the conch Pancajanya; and Dhananjaya (Arjuna, the\nwinner of wealth) blew his conch Devadatta. Bhima, the performer of\nterrible deeds, blew his great conch Paundra.",
+    "Ramanuja commentary" : "none"
+  },
+  "16": {
+    "transliteration": "anantavijayam raja kunti-putro yudhisthirah\nnakulah sahadevas ca sughosa-manipuspakau",
+    "translation": "King Yudhisthira, the son of Kunti (Arjuna), blew his Anantavyaya, while\nNakula and Sahadeva blew the Sughosa and the Manipuspaka conches.",
+    "Ramanuja commentary" : "none"
+  },
+  "17": {
+    "transliteration": "kasyas ca paramesv-asah sikhandi ca maha-rathah\ndhrstadyumno viratas ca satyakis caparajitah",
+    "translation": "The king of Kasi, an excellent archer; Sikhandi, the great chariot-warrior,\nDhrstadyumna, Virata, and the unconquerable Satyaki;",
+    "Ramanuja commentary" : "none"
+  },
+  "18": {
+    "transliteration": "drupado draupadeyas ca sarvasah prthivi-pate\nsaubhadras ca maha-bahuh sankhan dadhmuh prthak prthak",
+    "translation": "Drupada and the sons of Draupadi, O Lord of the Earth, and the mighty-\narmed son of Subhadra, all individually in one accord blew their respective\nconches.",
+    "Ramanuja commentary" : "none"
+  },
+  "19": {
+    "transliteration": "sa ghoso dhartarastranam hrdayani vyadarayat\nnabhas caprthivim caiva tumulo bh/vyanunadayan",
+    "translation": "The tumultuous uproar tore the hearts of the sons (people) of\nDhrtarashtra's assembly, filling the earth and sky with sound."
+    ,
+    "Ramanuja commentary" : "Duryodhana, after personally reviewing the forces of Pandavas marshalled by Bhima, and his own army marshalled by Bhishma, turned to Drona his teacher, and expressed his concern that his own army would be inadequate to conquer the Pandava forces — he was grief-stricken. Observing Duryodhana's loss of confidence, Bhishma, in order to encourage him, roared like a lion, and then blowing his conch, made his army sound their conches and kettle-drums, which made an uproar as a sign of their confidence of victory."
+  },
+  "20": {
+    "transliteration": "atha vyavasthitan drstva dhartarastran kapi dvajah\npravrtte sastra-sampate dhanur udyamya pandavah\nhrsikesam tada vakyam idam aha mahi-pate",
+    "translation": "Then, looking at the sons of Dhritarashtra standing ranged for battle, while\nthe discharge of missiles began, Arjuna, the son of Pandu, whose emblem\ndepicts Maruki (a monkey) , took up his bow and spoke these words to\nHrslkesa (Krsna), O Lord of Earth:",
+    "Ramanuja commentary" : "none"
+  },
+  "21": {
+    "transliteration": "arjuna uvaca\nsenayor ubhayor madhye ratham sthapaya me 'cyuta\nyavad etan nirikse 'ham yod dhu-kaman avasthitan\nkair may a saha yoddhavyam asmin rana-samudyame",
+    "translation": "Arjuna said: O Acyuta (Immortal, Krsna), position my chariot between the\ntwo armies, that I may just see those who stand here desirous to fight, to\nknow with whom I must combat in this act of war.",
+    "Ramanuja commentary" : "none"
+  },
+  "22": {
+    "transliteration": "arjuna uvaca\nsenayor ubhayor madhye ratham sthapaya me 'cyuta\nyavad etan nirikse 'ham yod dhu-kaman avasthitan\nkair may a saha yoddhavyam asmin rana-samudyame",
+    "translation": "Arjuna said: O Acyuta (Immortal, Krsna), position my chariot between the\ntwo armies, that I may just see those who stand here desirous to fight, to\nknow with whom I must combat in this act of war.",
+    "Ramanuja commentary" : "none"
+  },
+  "23": {
+    "transliteration": "yotsyamanan avekse 'ham ya ete 'tra samagatah\ndhartarastrasya durbuddher yuddhe priya-cikirsavah",
+    "translation": "I wish to look upon those who are assembled here, and are about to engage\nin battle eager to service in conflict the evil-minded son of Dhritarashtra,\nachieving what he regards as best.",
+    "Ramanuja commentary" : "none"
+  },
+  "24": {
+    "transliteration": "sanjaya uvaca\nevam ukto hrsikeso gudakesena bharata\nsenayor ubhayor madhye sthapayitva rathottamam",
+    "translation": "Sanjaya said: In response to Gudakesa's (Arjuna) request, O Bharata\n(Dhrtardshtra), Hrslkesa stationed that finest among chariots between the\ntwo armies.",
+    "Ramanuja commentary" : "none"
+  },
+  "25": {
+    "transliteration": "bhisma-drona-pramukhatah sarvesam ca mahi-ksitam\nuvaca partha pasyaitan samavetan kurun iti",
+    "translation": "Confronting Bhisma and Drona and all the rulers of earth, he said: O\nPartha (Arjuna), look at these assembled Kurus.",
+    "Ramanuja commentary" : "none"
+  },
+  "26": {
+    "transliteration": "tatrapasyat sthitan parthah pitrn atha pitamahan\nacaryan matulan bhratrn putran pautran sakhims tatha\nsvasuran suhrdas caiva nayor ubhayor api",
+    "translation": "Then, the son of Partha (Arjuna) saw ranged there in both the armies\nfathers (paternal uncles), grandfathers, teachers, maternal uncles, brothers,\nsons, grandsons and comrades, father-in-laws and friends.",
+    "Ramanuja commentary" : "none"
+  },
+  "27": {
+    "transliteration": "tan samiksya sa kaunteyah sarvan bandhun avasthitan\nkrpaya parayavisto visidann idam abravit",
+    "translation": "When the son of Kunti (Arjuna) saw that all those standing there in the\nranks of the two armies were his kinsmen, he was overwhelmed with\ndeepest pity and consequently said in sorrow:",
+    "Ramanuja commentary" : "none"
+  },
+  "28": {
+    "transliteration": "arjuna uvaca\ndrstvemam sva janam krsna yuyutsum samupasthitam\nsidanti mama gatrani mukham ca parisusyati",
+    "translation": "Arjuna said: Seeing these kinsmen, O Krsna, ranged, eager for combat, my\nlimbs fail, and my mouth is dried up,",
+    "Ramanuja commentary" : "none"
+  },
+  "29": {
+    "transliteration": "vepathus ca sarire me roma harsas ca jayate\ngandivam sramsate hastat tvak caiva paridahyate",
+    "translation": "My body quivers and my hair stands on end.\nThe Gandlva (bow) slips from my hand, and my skin is terribly burning.",
+    "Ramanuja commentary" : "none"
+  },
+  "30": {
+    "transliteration": "na ca saknomy avasthatum bhramativa ca me manah\nnimittani ca pasyami viparitani kesava",
+    "translation": "I am not able to stand, and my mind is spiralling as it were.\nI see opposing omens, O Kesava (Krsna),",
+    "Ramanuja commentary" : "none"
+  },
+  "31": {
+    "transliteration": "na ca sreyo 'nupasyami hatva sva-janam ahave\nna kankse vijayam krsna na ca rajyam sukhani ca",
+    "translation": "and do not see any good from\nkilling my kinsmen in battle. I do not wish victory, O Krsna, nor kingdoms or pleasures. What is the use\nto us in having a kingdom, O Govinda (Krsna), or amusement and even life.",
+    "Ramanuja commentary" : "none"
+  },
+  "32": {
+    "transliteration": "kim no rajyena govinda kim bhogair jivitena va\nyesam arthe kanksitam no rajyam bhogah sukhani ca",
+    "translation": "Those for whose sake we desire kingdom, enjoyments and pleasures stand\nhere for battle, having abandoned life and wealth;",
+    "Ramanuja commentary" : "none"
+  },
+  "33": {
+    "transliteration": "ta ime 'vasthita yuddhe pranams tyaktva dhanani ca\nacaryah pitarah putras tathaiva ca pitamahah",
+    "translation": "Teachers, fathers (paternal uncles), sons and grandfathers, maternal uncles,\nfathers-in-law, grandsons, brothers-in-law and also (other) relatives.",
+    "Ramanuja commentary" : "none"
+  },
+ "34": {
+    "transliteration": "matulah svasurah pautrah syalah sambandhinas tatha\netan na hantum icchami ghnato 'pi madhusudana",
+    "translation": "These, I do not want to kill, O Slayer of Madhusudana (Krsna), though they want to kill us, even for the sake to obtain the primacy over the three worlds; and much less for the sake of the earth!",
+    "Ramanuja commentary" : "none"
+  },
+  "35": {
+    "transliteration": "api trailokya-rajyasya hetoh kim nu mahi-krte\nnihatya dhartarastran nah ka pritih syaj janardana",
+    "translation": "Killing these sons of Dhrtarashtra, what satisfaction can be ours, O Janardana (Maintainer of the people, Krsna)? On killing these offenders only sin will take hold of us.",
+    "Ramanuja commentary" : "none"
+  },
+  "36": {
+    "transliteration": "papam evasrayed asman hatvaitan atatayinah\ntasman narha vayam hantum dhartarastran sa bandhavan\nsva janam hi katham hatva sukhinah syama madhava",
+    "translation": "It is not correct to kill our own kinsmen, the sons of Dhrtarashtra, indeed, by killing our own people, how can we be happy, O Madhava (Krsna)?",
+    "Ramanuja commentary" : "none"
+  },
+  "37": {
+    "transliteration": "yady apy ete na pasyanti lobhopahata-cetasah\nkula-ksaya-krtam dosam mitra-drohe ca patakam",
+    "translation": "Although these, their minds overpowered by greediness, perceive no guilt in the extinction of the family and no sin in treachery to friends,",
+    "Ramanuja commentary" : "none"
+  },
+  "38": {
+    "transliteration": "katham na jneyam asmabhih papad asman nivartitum\nkula ksaya krtam dosam prapasyadbhir janardana",
+    "translation": "Yet, O Janardana (Krsna); why should we not learn to retreat from this sin, perceiving the guilt in the destruction of the family?",
+    "Ramanuja commentary" : "none"
+  },
+  "39": {
+    "transliteration": "kula-ksaye pranasyanti kula-dharmah sanatanah\ndharme naste kulam krtsnam adharmo 'bhibhavaty uta",
+    "translation": "In the annihilation of a family, the immemorial family traditions (dharmas) are destroyed, and when these disappear, lawlessness overtakes the whole family.",
+    "Ramanuja commentary" : "none"
+  },
+  "40": {
+    "transliteration": "adharmabhibhavat krsna pradusyanti kula striyah\nsttisu dustasu varsneya jayate varna-sankarah",
+    "translation": "When lawlessness prevails, O Krsna, the women of the family become corrupted; and when women grow corrupt, O descendant of Varsneya (Krsna), there will be caste-confusion;",
+    "Ramanuja commentary" : "none"
+  },
+  "41": {
+    "transliteration": "sankaro narakayaiva kula-ghnanam kulasya ca\npatanti pitaro hy esam lupta-pindodaka-kriyah",
+    "translation": "And, the confusion of castes leads the family and those who have destroyed the families to hell. Their forefathers fall as well (to hell), deprived of their ritual offerings of rice-balls and water.",
+    "Ramanuja commentary" : "none"
+  },
+  "42": {
+    "transliteration": "dosair etaih kula-ghnanam varna-sankara-karakaih\nutsadyante jati-dharmah kula-dharmas ca sasvatah",
+    "translation": "By these evil deeds of those destroying the family, causing the fusion of castes (varna-samkara), the eternal family traditions are devastated."
+  },
+  "43": {
+    "transliteration": "utsanna-kula-dharmanam manusyanam janardana\nnarake niyatam vaso bhavatity anususruma",
+    "translation": "We have heard, O Janardana (Krsna), that those whose family traditions have been ruined dwell necessarily in hell.",
+    "Ramanuja commentary" : "none"
+  },
+  "44": {
+    "transliteration": "aho bata mahat papam kartum vyavasita vayam\nyad rajya-sukha-lobhena hantum sva-janam udyatah",
+    "translation": "Alas! We have determined to commit a great sin, inasmuch as we are attempting to kill our own kinsmen through greediness for the pleasures of supremacy.",
+    "Ramanuja commentary" : "none"
+  },
+  "45": {
+    "transliteration": "yadi mam apratikaram asastram sastra-panayah\ndhartarastra rane hanyus tan me ksemataram bhavet",
+    "translation": "It would be better for me, if the sons of Dhrtarashtra, weapons in hand, were to slay me in combat, while being unarmed and unable to resist.",
+    "Ramanuja commentary" : "none"
+  },
+  "46": {
+    "transliteration": "sanjaya uvaca\nevam uktvarjunah sankhye rathopastha upavisat\nvisrjya sa-saram capam soka-samvigna-manasah",
+    "translation": "Having spoken as such, Arjuna sank down on the seat of his chariot, casting away his bow and arrow, his mind distracted with grief."
+  }
 }
